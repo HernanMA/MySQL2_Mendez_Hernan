@@ -216,35 +216,67 @@ where id_departamento = 2 or id_departamento = 4 or id_departamento = 5;
 -- Resuelva todas las consultas utilizando la sintaxis de SQL1 y SQL2.
 
 -- 1. Devuelve un listado con los empleados y los datos de los departamentos donde trabaja cada uno.
-
+select empleado.nombre, departamento.nombre
+from empleado
+inner join departamento on empleado.id = departamento.id;
 
 -- 2. Devuelve un listado con los empleados y los datos de los departamentos donde trabaja cada uno. Ordena el resultado, en primer lugar por el nombre del departamento (en orden alfabético) y en segundo lugar por los apellidos y el nombre de los empleados.
-
+select departamento.nombre, empleado.apellido1, empleado.apellido2, empleado.nombre
+from empleado
+inner join departamento on empleado.id = departamento.id
+order by departamento.nombre asc, empleado.apellido1 asc, empleado.apellido2 asc, empleado.nombre asc;
 
 -- 3. Devuelve un listado con el identificador y el nombre del departamento, solamente de aquellos departamentos que tienen empleados.
-
+select departamento.id, departamento.nombre, empleado.nombre
+from empleado 
+inner join departamento on empleado.id = departamento.id 
+where empleado.id_departamento is not null;
 
 -- 4. Devuelve un listado con el identificador, el nombre del departamento y el valor del presupuesto actual del que dispone, solamente de aquellos departamentos que tienen empleados. El valor del presupuesto actual lo
 -- puede calcular restando al valor del presupuesto inicial (columna presupuesto) el valor de los gastos que ha generado (columna gastos).
+select departamento.id, departamento.nombre, empleado.nombre, (departamento.presupuesto - departamento.gastos) as presupuesto_Actual
+from empleado 
+inner join departamento on empleado.id = departamento.id 
+where empleado.id_departamento is not null;
 
 
 -- 5. Devuelve el nombre del departamento donde trabaja el empleado que tiene el nif 38382980M.
-
+select departamento.nombre, empleado.nombre, empleado.nif
+from empleado
+inner join departamento on empleado.id = departamento.id 
+where empleado.nif = '38382980M';
 
 -- 6. Devuelve el nombre del departamento donde trabaja el empleado Pepe Ruiz Santana.
-
+select departamento.nombre, empleado.nombre, empleado.apellido1, empleado.apellido2
+from empleado
+inner join departamento on empleado.id_departamento = departamento.id 
+where empleado.nombre = 'Pepe' and empleado.apellido1 = 'Ruiz' and apellido2 = 'Santana';
 
 -- 7. Devuelve un listado con los datos de los empleados que trabajan en el departamento de I+D. Ordena el resultado alfabéticamente.
-
+select departamento.nombre, empleado.nombre
+from empleado
+inner join departamento on empleado.id_departamento = departamento.id 
+where departamento.nombre = 'I+D'
+order by departamento.nombre asc;
 
 -- 8. Devuelve un listado con los datos de los empleados que trabajan en el departamento de Sistemas, Contabilidad o I+D. Ordena el resultado alfabéticamente.
-
+select departamento.nombre, empleado.nombre
+from empleado
+inner join departamento on empleado.id_departamento = departamento.id 
+where departamento.nombre = 'I+D' or departamento.nombre = 'Sistemas' or departamento.nombre = 'Contabilidad'
+order by empleado.nombre asc;
 
 -- 9. Devuelve una lista con el nombre de los empleados que tienen los departamentos que no tienen un presupuesto entre 100000 y 200000 euros.
-
+select departamento.nombre, empleado.nombre
+from empleado
+inner join departamento on empleado.id_departamento = departamento.id 
+where departamento.presupuesto not between 100000 and 200000;
 
 -- 10. Devuelve un listado con el nombre de los departamentos donde existe algún empleado cuyo segundo apellido sea NULL. Tenga en cuenta que no debe mostrar nombres de departamentos que estén repetidos.
-
+select distinct departamento.nombre, empleado.apellido1, empleado.apellido2
+from empleado
+inner join departamento on empleado.id_departamento = departamento.id 
+where empleado.apellido1 is null or empleado.apellido2 is null;
 
 -- ###################################################
 -- #### Consultas multitabla (Composición externa) ###
