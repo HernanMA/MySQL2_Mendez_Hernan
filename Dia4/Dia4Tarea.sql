@@ -1,6 +1,7 @@
 SHOW DATABASES;
 
 CREATE DATABASE Dia4_Taller;
+DROP DATABASE Dia4_Taller;
 
 USE Dia4_Taller;
 
@@ -37,14 +38,14 @@ CREATE TABLE cliente (
     correo_electronico VARCHAR(100) NULL
 );
 
-CREATE TABLE vehiculo1 (
+CREATE TABLE vehiculo (
     id_vehiculo INT PRIMARY KEY,
-    tipo_vehiculo ENUM('Camioneta', 'Deportivo', 'Familiar', 'Carga') NOT NULL,
+    tipo_vehiculo VARCHAR(200) NOT NULL,
     placa VARCHAR(20) NOT NULL,
     referencia VARCHAR(100) NOT NULL,
     modelo VARCHAR(200) NOT NULL,
     puertas INT NOT NULL,
-    estado ENUM('Vendido', 'Disponible'),
+    estado VARCHAR(100),
     capacidad INT NOT NULL,
     sunroof BOOLEAN NOT NULL,
     motor VARCHAR(50) NOT NULL,
@@ -56,17 +57,17 @@ CREATE TABLE alquiler (
     fecha_salida DATE NOT NULL,
     fecha_llegada DATE NOT NULL,
     fecha_esperada_llegada DATE NOT NULL,
-    valor_semana DECIMAL(10, 2) NOT NULL,
-    valor_dia DECIMAL(10, 2) NOT NULL,
-    porcentaje_descuento DECIMAL(5, 2) NULL,
-    valor_cotizado DECIMAL(10, 2) NOT NULL,
-    valor_pagado DECIMAL(10, 2) NOT NULL,
+    valor_semana INT NOT NULL,
+    valor_dia INT NOT NULL,
+    porcentaje_descuento INT NULL,
+    valor_cotizado INT NOT NULL,
+    valor_pagado INT NOT NULL,
     id_vehiculo INT NOT NULL,
     id_cliente INT NOT NULL,
     id_empleado INT NOT NULL,
     id_sucursal_salida INT NOT NULL,
     id_sucursal_llegada INT NOT NULL,
-    FOREIGN KEY (id_vehiculo) REFERENCES vehiculo1(id_vehiculo),
+    FOREIGN KEY (id_vehiculo) REFERENCES vehiculo(id_vehiculo),
     FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
     FOREIGN KEY (id_empleado) REFERENCES empleado(id_empleado),
     FOREIGN KEY (id_sucursal_salida) REFERENCES sucursal(id_sucursal),
@@ -87,5 +88,5 @@ CREATE USER 'Android'@'%' IDENTIFIED BY 'cliente2024';
 SELECT * FROM sucursal;
 SELECT * FROM empleado;
 SELECT * FROM cliente;
-SELECT * FROM vehiculo1;
+SELECT * FROM vehiculo;
 SELECT * FROM alquiler;

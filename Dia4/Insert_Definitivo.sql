@@ -1,517 +1,412 @@
 USE Dia4_Taller;
 
-INSERT INTO sucursal (id_sucursal, ciudad, direccion, telefono_fijo, celular, correo_electronico) VALUES
-(1, 'Bogotá', 'Carrera 45 # 22-33', '6011234567', '3001234567', 'bogota@autorental.com'),
-(2, 'Medellín', 'Calle 10 # 25-50', '6041234567', '3002345678', 'medellin@autorental.com'),
-(3, 'Cali', 'Avenida 6N # 14-80', '6021234567', '3003456789', 'cali@autorental.com'),
-(4, 'Barranquilla', 'Carrera 58 # 70-91', '6051234567', '3004567890', 'barranquilla@autorental.com'),
-(5, 'Cartagena', 'Calle 30 # 20-50', '6051234568', '3005678901', 'cartagena@autorental.com'),
-(6, 'Bucaramanga', 'Carrera 33 # 45-78', '6071234567', '3006789012', 'bucaramanga@autorental.com'),
-(7, 'Pereira', 'Avenida Circunvalar # 12-34', '6061234567', '3007890123', 'pereira@autorental.com'),
-(8, 'Manizales', 'Calle 23 # 8-40', '6062345678', '3008901234', 'manizales@autorental.com'),
-(9, 'Armenia', 'Carrera 14 # 15-60', '6063456789', '3009012345', 'armenia@autorental.com'),
-(10, 'Santa Marta', 'Avenida del Libertador # 20-10', '6052345678', '3000123456', 'santamarta@autorental.com'),
-(11, 'Villavicencio', 'Calle 15 # 22-33', '6081234567', '3011234567', 'villavicencio@autorental.com'),
-(12, 'Ibagué', 'Carrera 3 # 45-67', '6082345678', '3012345678', 'ibague@autorental.com'),
-(13, 'Cúcuta', 'Avenida 0 # 1-23', '6072345678', '3013456789', 'cucuta@autorental.com'),
-(14, 'Popayán', 'Carrera 6 # 7-89', '6022345678', '3014567890', 'popayan@autorental.com'),
-(15, 'Neiva', 'Calle 8 # 9-10', '6083456789', '3015678901', 'neiva@autorental.com'),
-(16, 'Pasto', 'Carrera 12 # 34-56', '6023456789', '3016789012', 'pasto@autorental.com'),
-(17, 'Tunja', 'Avenida Libertador # 14-28', '6084567890', '3017890123', 'tunja@autorental.com'),
-(18, 'Montería', 'Calle 44 # 33-11', '6043456789', '3018901234', 'monteria@autorental.com'),
-(19, 'Sincelejo', 'Carrera 17 # 23-45', '6054567890', '3019012345', 'sincelejo@autorental.com'),
-(20, 'Valledupar', 'Avenida 9 # 10-12', '6055678901', '3020123456', 'valledupar@autorental.com'),
-(21, 'Riohacha', 'Calle 12 # 13-14', '6056789012', '3021234567', 'riohacha@autorental.com'),
-(22, 'San Andrés', 'Avenida Colombia # 1-23', '6085678901', '3022345678', 'sanandres@autorental.com'),
-(23, 'Leticia', 'Carrera 10 # 2-34', '6086789012', '3023456789', 'leticia@autorental.com'),
-(24, 'Quibdó', 'Calle 9 # 10-11', '6045678901', '3024567890', 'quibdo@autorental.com'),
-(25, 'Yopal', 'Carrera 8 # 12-13', '6087890123', '3025678901', 'yopal@autorental.com'),
-(26, 'Florencia', 'Avenida 11 # 13-14', '6088901234', '3026789012', 'florencia@autorental.com'),
-(27, 'Mocoa', 'Calle 14 # 15-16', '6089012345', '3027890123', 'mocoa@autorental.com'),
-(28, 'Mitú', 'Carrera 7 # 8-9', '6080123456', '3028901234', 'mitu@autorental.com'),
-(29, 'Puerto Carreño', 'Avenida 12 # 13-14', '6081234568', '3030123456', 'puertocarreno@autorental.com'),
-(30, 'Inírida', 'Calle 16 # 17-18', '6082345679', '3031234567', 'inirida@autorental.com'),
-(31, 'La Guajira', 'Carrera 4 # 5-6', '6056789013', '3032345678', 'laguajira@autorental.com'),
-(32, 'Arauca', 'Avenida 7 # 8-9', '6073456789', '3033456789', 'arauca@autorental.com'),
-(33, 'Granada', 'Calle 11 # 12-13', '6084567891', '3034567890', 'granada@autorental.com'),
-(34, 'Cartago', 'Carrera 18 # 19-20', '6025678901', '3035678901', 'cartago@autorental.com'),
-(35, 'Rionegro', 'Avenida 2 # 3-4', '6046789012', '3036789012', 'rionegro@autorental.com'),
-(36, 'Sogamoso', 'Calle 5 # 6-7', '6087890124', '3037890123', 'sogamoso@autorental.com'),
-(37, 'Duitama', 'Carrera 19 # 20-21', '6088901235', '3038901234', 'duitama@autorental.com'),
-(38, 'Ipiales', 'Avenida 6 # 7-8', '6029012345', '3040123456', 'ipiales@autorental.com'),
-(39, 'Tumaco', 'Calle 17 # 18-19', '6020123456', '3041234567', 'tumaco@autorental.com'),
-(40, 'Turbo', 'Carrera 3 # 4-5', '6041234568', '3042345678', 'turbo@autorental.com'),
-(41, 'Buenaventura', 'Avenida 15 # 16-17', '6022345670', '3043456789', 'buenaventura@autorental.com'),
-(42, 'Arauca', 'Calle 9 # 10-11', '6074567891', '3044567890', 'arauca@autorental.com'),
-(43, 'Pamplona', 'Carrera 7 # 8-9', '6075678902', '3045678901', 'pamplona@autorental.com'),
-(44, 'Honda', 'Avenida 8 # 9-10', '6086789013', '3046789012', 'honda@autorental.com'),
-(45, 'Guaduas', 'Calle 4 # 5-6', '6087890125', '3047890123', 'guaduas@autorental.com'),
-(46, 'Zipaquirá', 'Carrera 15 # 16-17', '6018901234', '3048901234', 'zipaquira@autorental.com'),
-(47, 'Facatativá', 'Avenida 10 # 11-12', '6019012345', '3050123456', 'facatativa@autorental.com'),
-(48, 'Funza', 'Calle 19 # 20-21', '6010123456', '3051234567', 'funza@autorental.com'),
-(49, 'Chía', 'Carrera 2 # 3-4', '6011234568', '3052345678', 'chia@autorental.com'),
-(50, 'Girardot', 'Avenida 14 # 15-16', '6012345679', '3053456789', 'girardot@autorental.com'),
-(51, 'Sabanalarga', 'Calle 10 # 11-12', '6053456789', '3054567890', 'sabanalarga@autorental.com'),
-(52, 'Lorica', 'Carrera 8 # 9-10', '6055678902', '3055678901', 'lorica@autorental.com'),
-(53, 'Apartadó', 'Avenida 15 # 16-17', '6041234569', '3056789012', 'apartado@autorental.com'),
-(54, 'Tuluá', 'Calle 5 # 6-7', '6023456780', '3057890123', 'tulua@autorental.com'),
-(55, 'Buga', 'Carrera 11 # 12-13', '6024567891', '3058901234', 'buga@autorental.com'),
-(56, 'Palmira', 'Avenida 9 # 10-11', '6025678902', '3060123456', 'palmira@autorental.com'),
-(57, 'Caucasia', 'Calle 7 # 8-9', '6046789013', '3061234567', 'caucasia@autorental.com'),
-(58, 'Magangué', 'Carrera 16 # 17-18', '6057890124', '3062345678', 'magangue@autorental.com'),
-(59, 'Sogamoso', 'Avenida 4 # 5-6', '6088901236', '3063456789', 'sogamoso@autorental.com'),
-(60, 'Duitama', 'Calle 12 # 13-14', '6089012346', '3064567890', 'duitama@autorental.com'),
-(61, 'Ipiales', 'Carrera 18 # 19-20', '6020123457', '3065678901', 'ipiales@autorental.com'),
-(62, 'Tumaco', 'Avenida 6 # 7-8', '6021234568', '3066789012', 'tumaco@autorental.com'),
-(63, 'Turbo', 'Calle 17 # 18-19', '6042345679', '3067890123', 'turbo@autorental.com'),
-(64, 'Buenaventura', 'Carrera 3 # 4-5', '6023456781', '3068901234', 'buenaventura@autorental.com'),
-(65, 'Barrancabermeja', 'Avenida 15 # 16-17', '6074567892', '3069012345', 'barrancabermeja@autorental.com'),
-(66, 'Cimitarra', 'Calle 9 # 10-11', '6075678903', '3070123456', 'cimitarra@autorental.com'),
-(67, 'El Banco', 'Carrera 7 # 8-9', '6056789014', '3071234567', 'el banco@autorental.com'),
-(68, 'Garzón', 'Avenida 8 # 9-10', '6087890126', '3072345678', 'garzon@autorental.com'),
-(69, 'Gigante', 'Calle 4 # 5-6', '6088901237', '3073456789', 'gigante@autorental.com'),
-(70, 'Guamal', 'Carrera 15 # 16-17', '6089012347', '3074567890', 'guamal@autorental.com'),
-(71, 'Líbano', 'Avenida 10 # 11-12', '6080123458', '3075678901', 'libano@autorental.com'),
-(72, 'Mariquita', 'Calle 19 # 20-21', '6081234569', '3076789012', 'mariquita@autorental.com'),
-(73, 'Espinal', 'Carrera 2 # 3-4', '6082345670', '3077890123', 'espinal@autorental.com'),
-(74, 'Flandes', 'Avenida 14 # 15-16', '6083456781', '3078901234', 'flandes@autorental.com'),
-(75, 'Melgar', 'Calle 16 # 17-18', '6084567892', '3079012345', 'melgar@autorental.com'),
-(76, 'Purificación', 'Carrera 4 # 5-6', '6085678903', '3080123456', 'purificacion@autorental.com'),
-(77, 'San Gil', 'Avenida 7 # 8-9', '6076789015', '3081234567', 'san gil@autorental.com'),
-(78, 'Socorro', 'Calle 11 # 12-13', '6077890127', '3082345678', 'socorro@autorental.com'),
-(79, 'Barbosa', 'Carrera 18 # 19-20', '6078901238', '3083456789', 'barbosa@autorental.com'),
-(80, 'Carmen de Viboral', 'Avenida 5 # 6-7', '6041234570', '3084567890', 'carmen@autorental.com'),
-(81, 'Guatapé', 'Calle 8 # 9-10', '6042345671', '3085678901', 'guatape@autorental.com'),
-(82, 'Santafé de Antioquia', 'Carrera 7 # 8-9', '6043456782', '3086789012', 'santafe@autorental.com'),
-(83, 'Amagá', 'Avenida 6 # 7-8', '6044567893', '3087890123', 'amaga@autorental.com'),
-(84, 'El Carmen', 'Calle 14 # 15-16', '6045678904', '3088901234', 'el carmen@autorental.com'),
-(85, 'Frontino', 'Carrera 3 # 4-5', '6046789014', '3089012345', 'frontino@autorental.com'),
-(86, 'Jardín', 'Avenida 9 # 10-11', '6047890125', '3090123456', 'jardin@autorental.com'),
-(87, 'Jericó', 'Calle 12 # 13-14', '6048901236', '3091234567', 'jerico@autorental.com'),
-(88, 'La Ceja', 'Carrera 16 # 17-18', '6049012347', '3092345678', 'laceja@autorental.com'),
-(89, 'La Estrella', 'Avenida 8 # 9-10', '6040123459', '3093456789', 'laestrella@autorental.com'),
-(90, 'Marinilla', 'Calle 4 # 5-6', '6041234572', '3094567890', 'marinilla@autorental.com'),
-(91, 'Montebello', 'Carrera 10 # 11-12', '6042345673', '3095678901', 'montebello@autorental.com'),
-(92, 'Rionegro', 'Avenida 14 # 15-16', '6043456784', '3096789012', 'rionegro@autorental.com'),
-(93, 'San Carlos', 'Calle 18 # 19-20', '6044567895', '3097890123', 'sancarlos@autorental.com'),
-(94, 'San Rafael', 'Carrera 5 # 6-7', '6045678905', '3098901234', 'sanrafael@autorental.com'),
-(95, 'Santa Rosa de Osos', 'Avenida 11 # 12-13', '6046789015', '3099012345', 'santarosa@autorental.com'),
-(96, 'Sonsón', 'Calle 6 # 7-8', '6047890126', '3100123456', 'sonson@autorental.com'),
-(97, 'Tamesis', 'Carrera 17 # 18-19', '6048901237', '3101234567', 'tamesis@autorental.com'),
-(98, 'Tarazá', 'Avenida 19 # 20-21', '6049012348', '3102345678', 'taraza@autorental.com'),
-(99, 'Yarumal', 'Calle 9 # 10-11', '6040123460', '3103456789', 'yarumal@autorental.com'),
-(100, 'Zaragoza', 'Carrera 13 # 14-15', '6041234573', '3104567890', 'zaragoza@autorental.com');
+insert into sucursal (id_sucursal, ciudad, direccion, telefono_fijo, celular, correo_electronico) values (1, 'Sandefjord', '7 Schlimgen Terrace', '5658614694', '0930079876', 'eproudman0@boston.com');
+insert into sucursal (id_sucursal, ciudad, direccion, telefono_fijo, celular, correo_electronico) values (2, 'Budapest', '6 American Ash Center', '5608858883', '7279324622', 'amcshea1@list-manage.com');
+insert into sucursal (id_sucursal, ciudad, direccion, telefono_fijo, celular, correo_electronico) values (3, 'Raub', '05157 Declaration Circle', '9960478394', '1130935574', 'cphilson2@ibm.com');
+insert into sucursal (id_sucursal, ciudad, direccion, telefono_fijo, celular, correo_electronico) values (4, 'Banjar Jambe Baleran', '28554 Kennedy Hill', '4713896039', '8902251039', 'estrathe3@pcworld.com');
+insert into sucursal (id_sucursal, ciudad, direccion, telefono_fijo, celular, correo_electronico) values (5, 'Marcovia', '430 Harper Pass', '5853366513', '6142335903', 'targer4@clickbank.net');
+
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (1, 1, 'Shevels', 'galdersley0@vkontakte.ru', 'Aldersley', '75501 Coleman Hill', 'Uromi', '5896867115', 'taldersley0@com.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (2, 2, 'Harry', 'cjurick1@mapquest.com', 'Jurick', '29364 Morning Terrace', 'Tayabamba', '8331724526', 'ljurick1@live.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (3, 1, 'Beisley', 'bcolum2@bloglovin.com', 'Colum', '585 Meadow Ridge Lane', 'Machetá', '6493699231', 'jcolum2@jimdo.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (4, 4, 'Markham', 'cpurselow3@unicef.org', 'Purselow', '3662 Bluestem Parkway', 'Tushi', '9088228973', 'cpurselow3@theatlantic.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (5, 3, 'Cratere', 'miglesias4@sun.com', 'Iglesias', '47 Northview Court', 'Ardee', '3942069997', 'riglesias4@addtoany.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (6, 3, 'Rosborough', 'vszymanowicz5@behance.net', 'Szymanowicz', '70909 Towne Circle', 'Mangochi', '6887673975', 'dszymanowicz5@wikipedia.org');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (7, 5, 'Brumbie', 'idartan6@ftc.gov', 'Dartan', '42 Aberg Place', 'Chulabhorn', '6942278971', 'bdartan6@omniture.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (8, 5, 'Storton', 'dfarrah7@adobe.com', 'Farrah', '5100 Fisk Crossing', 'Ampasimanolotra', '9822077912', 'gfarrah7@wired.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (9, 4, 'Truluck', 'jlukovic8@cnn.com', 'Lukovic', '0 Victoria Alley', 'Mendefera', '8273936449', 'nlukovic8@aol.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (10, 1, 'Muncer', 'gglyde9@plala.or.jp', 'Glyde', '311 Charing Cross Road', 'Donnacona', '2978228008', 'cglyde9@abc.net.au');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (11, 5, 'Davidovich', 'swakemana@latimes.com', 'Wakeman', '71088 Monument Alley', 'San Antonio de Los Altos', '7604415628', 'nwakemana@washington.edu');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (12, 2, 'Kleehuhler', 'lshaleb@dmoz.org', 'Shale', '8368 Charing Cross Street', 'Shamkhor', '7125371736', 'gshaleb@psu.edu');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (13, 1, 'Stidworthy', 'ckikec@163.com', 'Kike', '644 Esch Park', 'Quangang', '4621297333', 'kkikec@i2i.jp');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (14, 4, 'Lannin', 'ckettlestringed@tmall.com', 'Kettlestringe', '00 Namekagon Street', 'Le Grand-Quevilly', '1056089938', 'lkettlestringed@amazonaws.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (15, 3, 'Tingey', 'saskere@buzzfeed.com', 'Asker', '70121 Pierstorff Terrace', 'Igreja', '4313859950', 'saskere@sogou.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (16, 3, 'Huyghe', 'ablatchfordf@360.cn', 'Blatchford', '78534 Clarendon Hill', 'Hinigaran', '2505882754', 'pblatchfordf@ow.ly');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (17, 3, 'Gavahan', 'ssigginsg@infoseek.co.jp', 'Siggins', '0399 Stang Park', 'Changfeng', '0591861593', 'msigginsg@dailymotion.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (18, 1, 'Yea', 'cmacconnellh@google.ca', 'MacConnell', '898 Kenwood Road', 'Nowe Brzesko', '5776257646', 'nmacconnellh@paypal.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (19, 1, 'Hanssmann', 'qtolossii@clickbank.net', 'Tolossi', '226 Hollow Ridge Terrace', 'Anuchino', '4274165213', 'ptolossii@yolasite.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (20, 3, 'Sigg', 'rsunnucksj@abc.net.au', 'Sunnucks', '8304 Mcbride Park', 'Yuktae-dong', '8931134231', 'esunnucksj@weibo.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (21, 4, 'Jellybrand', 'acoogank@joomla.org', 'Coogan', '8138 Marcy Drive', 'Xinzheng', '8855117637', 'bcoogank@ft.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (22, 4, 'Claesens', 'nsatterfittl@scientificamerican.com', 'Satterfitt', '36 Helena Place', 'Smołdzino', '9312216821', 'csatterfittl@adobe.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (23, 1, 'Walsom', 'fcavanm@histats.com', 'Cavan', '1534 Doe Crossing Plaza', 'Nove-Misto', '4043794959', 'ycavanm@bing.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (24, 2, 'Trenear', 'cskyramn@howstuffworks.com', 'Skyram', '8 Gerald Avenue', 'Mosjøen', '9713858751', 'gskyramn@shinystat.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (25, 3, 'Record', 'agullaneo@sakura.ne.jp', 'Gullane', '9 Nancy Center', 'Montijo', '7472393975', 'kgullaneo@guardian.co.uk');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (26, 4, 'Smithson', 'bmageep@elpais.com', 'Magee', '148 International Road', 'Weicheng', '4042036139', 'mmageep@com.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (27, 4, 'McLane', 'bklinerq@ocn.ne.jp', 'Kliner', '092 Elka Junction', 'Sant Julià de Lòria', '8843926594', 'pklinerq@umn.edu');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (28, 2, 'Burth', 'llaethamr@goo.ne.jp', 'Laetham', '0589 Tony Circle', 'Arranhó', '3801931269', 'flaethamr@barnesandnoble.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (29, 1, 'Clemenzo', 'bjanningss@list-manage.com', 'Jannings', '75 Sutteridge Junction', 'Braunschweig', '8131214850', 'ejanningss@barnesandnoble.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (30, 3, 'Shatliff', 'vsuttyt@bing.com', 'Sutty', '3 Kenwood Way', 'Nyköping', '0677023677', 'nsuttyt@webmd.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (31, 1, 'Kitchaside', 'akestellu@reuters.com', 'Kestell', '10 Nevada Alley', 'Storozhnytsya', '3560243076', 'akestellu@domainmarket.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (32, 5, 'Ferson', 'pvasserv@paginegialle.it', 'Vasser', '1 Sauthoff Drive', 'Ţawr al Bāḩah', '3925893164', 'nvasserv@sakura.ne.jp');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (33, 2, 'Bointon', 'pswainew@tamu.edu', 'Swaine', '851 3rd Street', 'Morrelgonj', '5353220447', 'kswainew@berkeley.edu');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (34, 3, 'Arrell', 'abrazenorx@rediff.com', 'Brazenor', '4 Pennsylvania Center', 'Sandaoba', '7328434090', 'abrazenorx@usgs.gov');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (35, 3, 'Jamme', 'gbeesey@va.gov', 'Beese', '663 Novick Circle', 'Forino', '9072772962', 'cbeesey@indiatimes.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (36, 2, 'Jouanet', 'tpriestnerz@networkadvertising.org', 'Priestner', '46813 Annamark Road', 'Gur’yevsk', '3850712257', 'jpriestnerz@soundcloud.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (37, 1, 'Udie', 'fobell10@soundcloud.com', 'Obell', '35315 Pankratz Plaza', 'Sundsvall', '5828734202', 'tobell10@tumblr.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (38, 2, 'Jansky', 'ahanscom11@photobucket.com', 'Hanscom', '75 Jana Place', 'Yeri', '0994859104', 'ahanscom11@liveinternet.ru');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (39, 5, 'Paye', 'sfranchyonok12@cbslocal.com', 'Franchyonok', '181 Bayside Pass', 'Skibbereen', '4583175752', 'nfranchyonok12@w3.org');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (40, 4, 'Clulow', 'emanketell13@umich.edu', 'Manketell', '4 Towne Lane', 'Didi Lilo', '2186772906', 'gmanketell13@cyberchimps.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (41, 3, 'Newtown', 'aewin14@theguardian.com', 'Ewin', '939 Sloan Place', 'Chenzhuang', '9365296897', 'iewin14@4shared.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (42, 3, 'Milroy', 'dstrode15@sina.com.cn', 'Strode', '69 Arapahoe Parkway', 'Lewobelek', '8474089719', 'dstrode15@ow.ly');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (43, 3, 'Welbeck', 'chebble16@unesco.org', 'Hebble', '575 Pine View Alley', 'Laiguangying', '6941403594', 'rhebble16@time.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (44, 4, 'Bondesen', 'ldast17@ebay.co.uk', 'Dast', '87143 South Lane', 'Saint-Priest', '6651488058', 'bdast17@youku.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (45, 1, 'Campkin', 'dsmurfit18@liveinternet.ru', 'Smurfit', '3066 Donald Terrace', 'Osilnica', '5519718296', 'esmurfit18@nih.gov');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (46, 1, 'Render', 'mberridge19@wordpress.com', 'Berridge', '14172 Texas Terrace', 'Ndofane', '5636024401', 'aberridge19@youtu.be');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (47, 3, 'Gasnell', 'tdooland1a@home.pl', 'Dooland', '2564 Ronald Regan Road', 'Luofang', '6166033877', 'kdooland1a@tamu.edu');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (48, 2, 'Gainsborough', 'aashwin1b@jimdo.com', 'Ashwin', '2964 Starling Way', 'Nakhchivan', '3241619389', 'bashwin1b@mtv.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (49, 1, 'Greaves', 'gtink1c@imgur.com', 'Tink', '86954 Scoville Way', 'San Antonio', '9652138924', 'ztink1c@ask.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (50, 3, 'Ransome', 'mwalklate1d@businessweek.com', 'Walklate', '27 Shoshone Crossing', 'Yeşilköy', '9980239751', 'jwalklate1d@census.gov');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (51, 1, 'Carslake', 'jbeedon1e@google.ru', 'Beedon', '18957 Morningstar Center', 'Yushanpu', '8789729986', 'tbeedon1e@friendfeed.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (52, 5, 'Guerreau', 'hgill1f@tinypic.com', 'Gill', '1 Randy Crossing', 'Juḩr ad Dīk', '5021057324', 'egill1f@php.net');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (53, 1, 'Dunford', 'dzamudio1g@java.com', 'Zamudio', '49 Grover Crossing', 'Tanjungbalai', '8769407789', 'czamudio1g@weebly.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (54, 5, 'Tibb', 'jskeeles1h@pinterest.com', 'Skeeles', '178 Nevada Alley', 'Muting', '9645582431', 'kskeeles1h@storify.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (55, 4, 'Matthessen', 'ajanko1i@businessweek.com', 'Janko', '3761 Dapin Center', 'Cicurug', '2981382578', 'sjanko1i@admin.ch');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (56, 2, 'Doran', 'jspinas1j@infoseek.co.jp', 'Spinas', '9 Ryan Court', 'Xinhang', '6388087019', 'cspinas1j@msn.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (57, 4, 'Plunkett', 'awarlawe1k@plala.or.jp', 'Warlawe', '7898 Hanover Avenue', 'Campos do Jordão', '3874467945', 'kwarlawe1k@webnode.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (58, 1, 'Haldon', 'nmcgenn1l@e-recht24.de', 'McGenn', '3 Fordem Street', 'Pader Palwo', '1570607486', 'pmcgenn1l@nytimes.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (59, 5, 'Daskiewicz', 'eekkel1m@ox.ac.uk', 'Ekkel', '61349 Mosinee Circle', 'Seremban', '6084991696', 'fekkel1m@nih.gov');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (60, 5, 'Clemenzo', 'iflinders1n@mtv.com', 'Flinders', '787 Cherokee Terrace', 'Zarichne', '0632156147', 'bflinders1n@omniture.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (61, 2, 'Seniour', 'rgoodredge1o@blogspot.com', 'Goodredge', '313 Fairfield Road', 'Hưng Yên', '1306285089', 'dgoodredge1o@irs.gov');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (62, 1, 'Witchell', 'ngreeno1p@bbc.co.uk', 'Greeno', '46355 Elka Circle', 'Qutun', '1557019541', 'pgreeno1p@yahoo.co.jp');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (63, 3, 'Waring', 'bcurrao1q@ted.com', 'Currao', '78 Continental Way', 'Kristiansand S', '2595335251', 'lcurrao1q@bandcamp.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (64, 4, 'Costain', 'drobley1r@mac.com', 'Robley', '78 Declaration Point', 'Danville', '7630075073', 'irobley1r@php.net');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (65, 1, 'Turle', 'ggumme1s@patch.com', 'Gumme', '72756 Sachs Avenue', 'Alegria', '1031163972', 'bgumme1s@google.co.uk');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (66, 5, 'Moores', 'gpringer1t@freewebs.com', 'Pringer', '7 Farragut Parkway', 'Itzig', '8464868103', 'upringer1t@comcast.net');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (67, 2, 'Wateridge', 'kthomazet1u@uol.com.br', 'Thomazet', '1621 Golden Leaf Street', 'Charlotte', '4369791375', 'kthomazet1u@ifeng.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (68, 4, 'Jarred', 'iharborow1v@sphinn.com', 'Harborow', '0 Rowland Park', 'Linköping', '4433179930', 'tharborow1v@statcounter.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (69, 2, 'Valde', 'fgabey1w@reddit.com', 'Gabey', '14231 Susan Junction', 'Pantai Ceuremen', '1400455146', 'bgabey1w@amazon.co.uk');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (70, 5, 'Chatelot', 'lhapps1x@illinois.edu', 'Happs', '98 Clyde Gallagher Avenue', 'Saint-Germain-en-Laye', '2670031609', 'vhapps1x@deviantart.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (71, 2, 'Champneys', 'sclaringbold1y@google.ca', 'Claringbold', '5 High Crossing Lane', 'Hněvotín', '1469028611', 'hclaringbold1y@list-manage.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (72, 2, 'Crosetto', 'rbarnardo1z@house.gov', 'Barnardo', '3 Moulton Street', 'Dobryanka', '4221932554', 'cbarnardo1z@wix.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (73, 3, 'Plevin', 'lreignould20@marriott.com', 'Reignould', '6 Service Terrace', 'Göteborg', '7137817998', 'sreignould20@wiley.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (74, 1, 'Rafferty', 'wcrix21@oracle.com', 'Crix', '29 Mesta Lane', 'Lewoluo', '6492499352', 'bcrix21@symantec.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (75, 4, 'Eliassen', 'cunion22@etsy.com', 'Union', '1 Oak Valley Center', 'San Ramon', '8321012949', 'aunion22@baidu.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (76, 5, 'Petken', 'ballery23@friendfeed.com', 'Allery', '418 Meadow Vale Parkway', 'Oslo', '8340577697', 'sallery23@illinois.edu');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (77, 1, 'Featherstonhaugh', 'bwinterborne24@theglobeandmail.com', 'Winterborne', '693 Sunbrook Park', 'Vila Nova', '9249641028', 'cwinterborne24@cdbaby.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (78, 2, 'L''argent', 'hbanghe25@disqus.com', 'Banghe', '353 Steensland Drive', 'Gerdu', '6549452333', 'cbanghe25@cafepress.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (79, 4, 'Bygreaves', 'cobispo26@unblog.fr', 'Obispo', '2 Northport Junction', 'Kelburn', '8262960904', 'tobispo26@msn.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (80, 1, 'Bertson', 'mwhitlow27@wordpress.com', 'Whitlow', '736 Independence Junction', 'Göteborg', '7434828587', 'jwhitlow27@geocities.jp');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (81, 3, 'Denecamp', 'cangeau28@miitbeian.gov.cn', 'Angeau', '2 Cascade Park', 'Linglu', '4367971163', 'dangeau28@imgur.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (82, 3, 'Britner', 'aspenley29@wikimedia.org', 'Spenley', '8054 North Terrace', 'Yangirabot', '0305277804', 'cspenley29@reference.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (83, 2, 'Karlmann', 'lwynett2a@redcross.org', 'Wynett', '4599 Kennedy Trail', 'Vozuća', '0208373098', 'lwynett2a@ezinearticles.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (84, 2, 'Miall', 'rtumulty2b@opensource.org', 'Tumulty', '7 Thierer Junction', 'Rayevskiy', '7653978541', 'gtumulty2b@instagram.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (85, 4, 'Vermer', 'lmoncaster2c@cbslocal.com', 'Moncaster', '87698 Cottonwood Street', 'Lučko', '2359833308', 'gmoncaster2c@networkadvertising.org');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (86, 3, 'Bows', 'rmorstatt2d@tinypic.com', 'Morstatt', '04390 Anderson Alley', 'Toulouse', '6642907124', 'gmorstatt2d@dmoz.org');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (87, 3, 'Menezes', 'aingliss2e@webeden.co.uk', 'Ingliss', '19142 Clyde Gallagher Center', 'Porangatu', '4549508620', 'dingliss2e@wired.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (88, 1, 'Harrower', 'ckittiman2f@reuters.com', 'Kittiman', '6 Heffernan Place', 'Budy', '9418309823', 'ckittiman2f@who.int');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (89, 2, 'Hurt', 'kjackalin2g@noaa.gov', 'Jackalin', '7 Everett Hill', 'Shigu', '0883211769', 'yjackalin2g@gravatar.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (90, 2, 'Getcliffe', 'wlebell2h@123-reg.co.uk', 'Lebell', '84 Heffernan Trail', 'Sishan', '5884931948', 'wlebell2h@odnoklassniki.ru');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (91, 3, 'Dannett', 'dklempke2i@pcworld.com', 'Klempke', '5 Comanche Hill', 'San Jose', '1290927138', 'rklempke2i@gmpg.org');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (92, 4, 'Crossland', 'ifeakins2j@usa.gov', 'Feakins', '20434 Prairieview Point', 'Rancho Viejo', '9114978733', 'jfeakins2j@cafepress.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (93, 5, 'Nestle', 'sdarbey2k@bluehost.com', 'Darbey', '20780 Jackson Junction', 'Angasmarca', '4105254782', 'sdarbey2k@businesswire.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (94, 2, 'Wysome', 'shanrott2l@opensource.org', 'Hanrott', '6696 Fuller Hill', 'Zagazig', '7305783897', 'jhanrott2l@prlog.org');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (95, 5, 'Groundwater', 'sangier2m@google.it', 'Angier', '0766 Kennedy Crossing', 'La Soledad', '7186109292', 'gangier2m@dedecms.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (96, 1, 'Readings', 'rwedgbrow2n@elegantthemes.com', 'Wedgbrow', '9432 Warbler Court', 'La Dorada', '7324777783', 'awedgbrow2n@ted.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (97, 2, 'Miners', 'ldibbs2o@yale.edu', 'Dibbs', '9 Village Green Terrace', 'Rembes', '9034632458', 'idibbs2o@miitbeian.gov.cn');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (98, 3, 'Lancley', 'dgallafant2p@cbsnews.com', 'Gallafant', '12 Northfield Crossing', 'Vuzenica', '4058585153', 'sgallafant2p@ucsd.edu');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (99, 1, 'Shervil', 'bkittow2q@cornell.edu', 'Kittow', '4 Northridge Drive', 'Aba', '8745745986', 'fkittow2q@ucoz.com');
+insert into empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (100, 3, 'Dollard', 'ncolombier2r@tumblr.com', 'Colombier', '1 Hoffman Drive', 'Hamakita', '1354866770', 'gcolombier2r@japanpost.jp');
+
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (1, '5366179564', 'Brett', 'Missen', '2818 Mitchell Place', 'Ágios Andréas', '6368301058', 'bmissen0@bizjournals.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (2, '8523826866', 'Martin', 'Wards', '7227 Tennyson Lane', 'Ingarö', '5181102867', 'mwards1@businessinsider.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (3, '7509173590', 'Berget', 'Coaster', '223 Straubel Terrace', 'Ban Bueng', '5564920880', 'bcoaster2@upenn.edu');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (4, '3286155225', 'Kippar', 'Joao', '639 Independence Crossing', 'Shixi', '4527977628', 'kjoao3@si.edu');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (5, '2823820426', 'Rafaelia', 'Camoys', '43971 Clemons Center', 'Bobrovka', '7028852792', 'rcamoys4@istockphoto.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (6, '2320468471', 'Eward', 'Lambol', '52020 Chive Circle', 'Tando Muhammad Khān', '2296641709', 'elambol5@livejournal.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (7, '5894588871', 'Paulo', 'Belfelt', '97292 6th Court', 'Järfälla', '7874661753', 'pbelfelt6@oaic.gov.au');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (8, '9165660382', 'Broderic', 'Horley', '2 Hazelcrest Avenue', 'Mosul', '0593041216', 'bhorley7@wordpress.org');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (9, '8133212545', 'Dominic', 'Pietersen', '61 Crest Line Junction', 'Trenggulunan', '3591133205', 'dpietersen8@va.gov');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (10, '2840113473', 'Zitella', 'Isaak', '31004 Mitchell Place', 'Jinping', '2835619313', 'zisaak9@shareasale.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (11, '2043480057', 'Anastassia', 'Chuter', '542 Forster Court', 'Xinjie', '9097831687', 'achutera@mozilla.org');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (12, '1765571049', 'Towney', 'Tocqueville', '4673 Novick Circle', 'Argostólion', '3629094716', 'ttocquevilleb@rambler.ru');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (13, '6006448955', 'Michel', 'Alfonsetti', '48 Hoffman Plaza', 'Rancagua', '5334155309', 'malfonsettic@pbs.org');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (14, '1680410067', 'Orelle', 'Ferrick', '7 Loomis Point', 'Chikushino-shi', '3118265205', 'oferrickd@paginegialle.it');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (15, '4347542496', 'Robinet', 'Treanor', '9 Eggendart Trail', 'Nekhayevskiy', '6653072398', 'rtreanore@accuweather.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (16, '9550943658', 'Nikolas', 'Bramsen', '175 Scofield Lane', 'Yessentuki', '5010041227', 'nbramsenf@msu.edu');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (17, '8085509644', 'Cally', 'Quare', '4 Rockefeller Court', 'Wichita', '6630098358', 'cquareg@symantec.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (18, '2055794396', 'Leandra', 'Hunnam', '1 David Parkway', 'Mojogajeh', '1324189320', 'lhunnamh@linkedin.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (19, '8999906450', 'Dore', 'O'' Shea', '538 Packers Avenue', 'Gastoúni', '6661169915', 'dosheai@msu.edu');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (20, '7133532085', 'Cristian', 'Longo', '9321 Lakeland Point', 'Cagwait', '5399239280', 'clongoj@newsvine.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (21, '4765125025', 'Orren', 'O''Lagen', '10688 Melody Place', 'Lañgub', '9474989664', 'oolagenk@latimes.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (22, '8872535107', 'Imogen', 'Stinton', '88686 Scoville Hill', 'Santa Fe', '7875479673', 'istintonl@shop-pro.jp');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (23, '4230659148', 'Carlina', 'Leaning', '32 Di Loreto Way', 'Mahanoro', '9883500823', 'cleaningm@quantcast.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (24, '7136152178', 'Katharyn', 'Paine', '8 Schurz Terrace', 'Sarāvān', '3405390060', 'kpainen@webnode.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (25, '6279414558', 'Gelya', 'Besnard', '3600 Arkansas Pass', 'Pakel', '8319795214', 'gbesnardo@homestead.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (26, '2586269004', 'Maxie', 'Stuchberry', '4 Nobel Plaza', 'Iznoski', '5712015609', 'mstuchberryp@nba.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (27, '9413110409', 'Celie', 'Caulder', '768 Debra Court', 'Taishang', '8188573418', 'ccaulderq@prnewswire.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (28, '7598700419', 'Sylvester', 'Mellonby', '5 Moulton Plaza', 'Garibaldi', '3771798221', 'smellonbyr@vinaora.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (29, '7444168997', 'Siobhan', 'Dies', '2706 Arizona Avenue', 'Gimry', '9720809094', 'sdiess@state.tx.us');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (30, '4246902314', 'Vere', 'Brolechan', '07 Westridge Court', 'Kilcullen', '2573306577', 'vbrolechant@blogspot.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (31, '5479455400', 'Cathe', 'Schoenrock', '08749 Beilfuss Drive', 'Besuki Dua', '9804703254', 'cschoenrocku@skype.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (32, '7888288057', 'Maris', 'Helliker', '23 Kinsman Point', 'Phù Mỹ', '6153505538', 'mhellikerv@hatena.ne.jp');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (33, '2560119102', 'Toddie', 'Snelle', '23163 3rd Way', 'Garahan', '8928901790', 'tsnellew@blogspot.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (34, '8274579046', 'Chadd', 'Keymer', '31592 Hermina Pass', 'Miedzichowo', '7353996137', 'ckeymerx@ucoz.ru');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (35, '6746390187', 'Liuka', 'Kleeborn', '433 Rockefeller Trail', 'Jihui', '3163263496', 'lkleeborny@topsy.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (36, '8488010400', 'Tova', 'Broske', '6459 Westport Way', 'Zhanlong', '0870305409', 'tbroskez@adobe.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (37, '6080239981', 'Rosie', 'Caskie', '60 Delladonna Hill', 'Nancy', '9092958255', 'rcaskie10@hibu.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (38, '2621449107', 'Garvin', 'Streater', '5943 Knutson Center', 'Dezhou', '5688343443', 'gstreater11@baidu.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (39, '7996120285', 'Shanna', 'Criple', '30698 Surrey Hill', 'Mahuta', '7062308242', 'scriple12@tinypic.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (40, '3243133890', 'Adolf', 'Dever', '6 Stuart Drive', 'Krasnyy Oktyabr’', '5602180281', 'adever13@naver.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (41, '2227261749', 'Rabbi', 'McGray', '30 Morningstar Plaza', 'Tegalagung', '5854145499', 'rmcgray14@cpanel.net');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (42, '6867226906', 'Gianina', 'Brampton', '11 Pennsylvania Drive', 'President Roxas', '8071327034', 'gbrampton15@si.edu');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (43, '7394487032', 'Gary', 'Bucham', '9 Moose Center', 'Babakandesa', '4204033482', 'gbucham16@loc.gov');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (44, '1589848160', 'Elka', 'Twiddell', '0 Jay Road', 'Fushan', '1327463741', 'etwiddell17@cmu.edu');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (45, '9082507196', 'Noak', 'Beuscher', '075 Stone Corner Pass', 'Tulaghi', '0560423500', 'nbeuscher18@aboutads.info');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (46, '1160477027', 'Amil', 'Tacon', '88384 Sutherland Terrace', 'Nesovice', '0173497772', 'atacon19@lycos.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (47, '5712027801', 'Boy', 'Goudge', '36 Comanche Way', 'Beima', '6142920571', 'bgoudge1a@hatena.ne.jp');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (48, '5107641180', 'Marylee', 'Ximenez', '65051 New Castle Road', 'Pringu', '9295647246', 'mximenez1b@unesco.org');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (49, '1785515594', 'Vivien', 'Longland', '19377 Bellgrove Avenue', 'Hartford', '1290357331', 'vlongland1c@vk.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (50, '8206491953', 'Revkah', 'Zanetto', '1 Eastlawn Hill', 'Njeru', '4362419098', 'rzanetto1d@answers.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (51, '8616963782', 'Shaylyn', 'Habbert', '78736 Hanson Trail', 'Oklahoma City', '2294170849', 'shabbert1e@examiner.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (52, '6681437117', 'Richardo', 'Ghidelli', '3 Golf View Alley', 'Timrå', '6129358970', 'rghidelli1f@reuters.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (53, '0319814084', 'Perle', 'Brogan', '666 Orin Place', 'Lobão', '4517717232', 'pbrogan1g@cam.ac.uk');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (54, '3492749631', 'Gaye', 'Lahy', '00 Onsgard Park', 'Wangtai', '0868890685', 'glahy1h@ask.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (55, '3370004615', 'Giffy', 'Rymell', '3 Rutledge Plaza', 'Guiuan', '2952123179', 'grymell1i@wordpress.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (56, '4433448400', 'Thibaud', 'Dymock', '68519 Northland Parkway', 'Orlovskiy', '3847601423', 'tdymock1j@latimes.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (57, '0709382995', 'Delmore', 'Cheatle', '393 Service Crossing', 'Shīnḏanḏ', '4047032271', 'dcheatle1k@dailymail.co.uk');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (58, '7811417286', 'Wilhelmine', 'Coghlan', '9 Brentwood Way', 'Józefów', '9632790049', 'wcoghlan1l@ucla.edu');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (59, '7772287844', 'Maddy', 'Harrowell', '2961 Fair Oaks Circle', 'Prao', '5504465958', 'mharrowell1m@who.int');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (60, '7617324839', 'Terese', 'Aartsen', '02 Cherokee Plaza', 'Tegarenkrajan', '5080022116', 'taartsen1n@wufoo.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (61, '3042067017', 'Celestyna', 'Fridd', '6666 Starling Parkway', 'Haoxinying', '8002082796', 'cfridd1o@wikimedia.org');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (62, '8418718854', 'Ginny', 'Schultes', '073 Ronald Regan Point', 'Yanaul', '7842428727', 'gschultes1p@princeton.edu');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (63, '7412062026', 'Devonne', 'Muncer', '3979 Hintze Pass', 'Bamban', '5282743299', 'dmuncer1q@ucsd.edu');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (64, '3481481160', 'Karissa', 'Impett', '32112 Utah Road', 'Ube', '8103526126', 'kimpett1r@paginegialle.it');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (65, '7914865451', 'Lin', 'Erridge', '614 Scoville Center', 'Donghe', '3696479241', 'lerridge1s@bloglovin.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (66, '9110121811', 'Geoff', 'Shemmans', '30645 3rd Point', 'Bukui', '7742295253', 'gshemmans1t@alexa.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (67, '6498331364', 'Maryjo', 'Odom', '314 Crest Line Street', 'Aimorés', '3328412085', 'modom1u@house.gov');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (68, '0620670487', 'Stephen', 'Barabisch', '8 6th Center', 'Bassar', '4919431007', 'sbarabisch1v@netvibes.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (69, '3458664300', 'Gwyneth', 'Jeayes', '4 Lake View Street', 'Pécs', '3323049306', 'gjeayes1w@globo.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (70, '2754758607', 'Kareem', 'Glowacki', '8267 Jenna Park', 'Mandapajaya', '5730797923', 'kglowacki1x@omniture.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (71, '2281539946', 'Berenice', 'Blackah', '106 Little Fleur Crossing', 'Camp Diable', '7822880462', 'bblackah1y@amazon.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (72, '9101166557', 'Roxi', 'Heyball', '95317 Warner Lane', 'Orlová', '3652791487', 'rheyball1z@hao123.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (73, '0464453755', 'Caryn', 'Gregorowicz', '3705 Havey Road', 'Hołoby', '7474252627', 'cgregorowicz20@about.me');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (74, '1712664190', 'Isa', 'Robertshaw', '4152 Helena Pass', 'Rio Piracicaba', '9043167525', 'irobertshaw21@apache.org');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (75, '4643007621', 'Mireille', 'Gherardi', '5 Raven Street', 'Muyinga', '3595821041', 'mgherardi22@prweb.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (76, '9780553843', 'Elke', 'Reary', '02 Melody Trail', 'Punkalaidun', '7489740533', 'ereary23@1688.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (77, '7111513266', 'Tiena', 'Gorcke', '8 Stang Street', 'Niutian', '3816600689', 'tgorcke24@theglobeandmail.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (78, '8848703488', 'Bernadette', 'Makepeace', '89 Pond Center', 'Kasakh', '8476219369', 'bmakepeace25@w3.org');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (79, '8399255998', 'Sollie', 'Wallwork', '794 Novick Trail', 'Beraim', '2043286455', 'swallwork26@geocities.jp');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (80, '4310551882', 'Maurice', 'Kingshott', '062 Veith Crossing', 'Mundão', '8100102791', 'mkingshott27@eepurl.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (81, '1847251528', 'Claudette', 'Greatbanks', '24 Anzinger Junction', 'Arras', '5658992397', 'cgreatbanks28@pbs.org');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (82, '2072696690', 'Stevena', 'Farra', '993 Tomscot Avenue', 'Islamey', '3690959659', 'sfarra29@unicef.org');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (83, '2749408237', 'Erhart', 'Daintith', '5926 Anzinger Drive', 'Dakhla', '8861147941', 'edaintith2a@si.edu');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (84, '1214645186', 'Gussi', 'Grissett', '8698 Bonner Avenue', 'Ifanadiana', '7996931593', 'ggrissett2b@amazon.co.jp');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (85, '1591582644', 'Leola', 'Coolbear', '58153 Everett Drive', 'Jagüey Grande', '8567193532', 'lcoolbear2c@merriam-webster.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (86, '8632108514', 'Melina', 'Franceschelli', '1616 7th Trail', 'Solna', '8485376293', 'mfranceschelli2d@people.com.cn');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (87, '3368416952', 'Agustin', 'Laven', '06 Corben Point', 'Buynichy', '8125681612', 'alaven2e@w3.org');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (88, '0540011134', 'Rosie', 'Sussems', '6098 Orin Parkway', 'Xiaxihao', '9323524662', 'rsussems2f@ebay.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (89, '6359222124', 'Nadeen', 'Groven', '8 Scofield Drive', 'Hualmay', '9380041551', 'ngroven2g@myspace.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (90, '3384159365', 'Kathryn', 'Flewan', '3 Pearson Pass', 'Świebodzice', '8542592387', 'kflewan2h@ocn.ne.jp');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (91, '3211773045', 'Junette', 'Leete', '69 Brown Road', 'Xishiqiao', '5033900641', 'jleete2i@unc.edu');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (92, '7568200302', 'Alidia', 'Yeandel', '93662 Muir Alley', 'Llaillay', '9547082949', 'ayeandel2j@wired.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (93, '4634949954', 'Margareta', 'Grooby', '23 Butterfield Pass', 'Vitanje', '9749132459', 'mgrooby2k@epa.gov');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (94, '6483503644', 'Carmelia', 'Skellion', '2299 Thierer Place', 'Troyes', '2386164713', 'cskellion2l@bandcamp.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (95, '4231020892', 'Mahmoud', 'Aulton', '57334 Harbort Street', 'Bhalil', '9669375843', 'maulton2m@aboutads.info');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (96, '8494677888', 'Freddy', 'de Bullion', '82047 Mesta Crossing', 'Las Tejeras', '4113313172', 'fdebullion2n@cmu.edu');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (97, '5322321160', 'Harri', 'Wallbanks', '7270 Dexter Circle', 'Champaign', '1793013047', 'hwallbanks2o@omniture.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (98, '7414513181', 'Corrie', 'Ginie', '355 Warbler Circle', 'Gandara', '9162008439', 'cginie2p@nature.com');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (99, '9596406027', 'Lydon', 'Penhalurick', '35 Hooker Plaza', 'Lebao', '9510734764', 'lpenhalurick2q@unicef.org');
+insert into cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico) values (100, '2156701164', 'Elden', 'Genever', '0326 Boyd Alley', 'Tsukuba', '6613508810', 'egenever2r@huffingtonpost.com');
 
 
-INSERT INTO empleado (id_empleado, id_sucursal, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico)
-VALUES
-(1, 1, '123456789', 'Juan', 'Pérez', 'Calle 123, Bogotá', 'Bogotá', '3212345678', 'juan.perez@example.com'),
-(2, 2, '987654321', 'Ana', 'Gómez', 'Av. Principal, Medellín', 'Medellín', '3123456789', 'ana.gomez@example.com'),
-(3, 3, '456789123', 'Carlos', 'Martínez', 'Cra. 45, Cali', 'Cali', '3009876543', 'carlos.martinez@example.com'),
-(4, 4, '789123456', 'María', 'Rodríguez', 'Cl. 34, Barranquilla', 'Barranquilla', '3158765432', 'maria.rodriguez@example.com'),
-(5, 5, '654321987', 'Pedro', 'López', 'Calle 67, Cartagena', 'Cartagena', '3176543210', 'pedro.lopez@example.com'),
-(6, 6, '321987654', 'Laura', 'Ramírez', 'Cra. 12, Bucaramanga', 'Bucaramanga', '3145678901', 'laura.ramirez@example.com'),
-(7, 7, '234567890', 'Jorge', 'García', 'Calle 78, Pereira', 'Pereira', '3187654321', 'jorge.garcia@example.com'),
-(8, 8, '901234567', 'Ana María', 'Hernández', 'Av. Circunvalar, Manizales', 'Manizales', '3106789456', 'ana.hernandez@example.com'),
-(9, 9, '567890123', 'Diego', 'Sánchez', 'Cra. 56, Armenia', 'Armenia', '3198765432', 'diego.sanchez@example.com'),
-(10, 10, '678901234', 'Martha', 'Góngora', 'Cl. 90, Santa Marta', 'Santa Marta', '3234567890', 'martha.gongora@example.com'),
-(11, 11, '345678901', 'Andrés', 'Jiménez', 'Calle 23, Villavicencio', 'Villavicencio', '3012345678', 'andres.jimenez@example.com'),
-(12, 12, '456789012', 'Valentina', 'Rojas', 'Av. Principal, Ibagué', 'Ibagué', '3056789012', 'valentina.rojas@example.com'),
-(13, 13, '567890123', 'Camilo', 'Gutiérrez', 'Cra. 78, Cúcuta', 'Cúcuta', '3134567890', 'camilo.gutierrez@example.com'),
-(14, 14, '678901234', 'Daniela', 'Londoño', 'Cl. 45, Popayán', 'Popayán', '3045678901', 'daniela.londono@example.com'),
-(15, 15, '789012345', 'Santiago', 'Martínez', 'Cra. 34, Neiva', 'Neiva', '3123456789', 'santiago.martinez@example.com'),
-(16, 16, '890123456', 'Laura', 'Herrera', 'Calle 12, Pasto', 'Pasto', '3176543210', 'laura.herrera@example.com'),
-(17, 17, '901234567', 'Felipe', 'Gómez', 'Av. 45, Tunja', 'Tunja', '3109876543', 'felipe.gomez@example.com'),
-(18, 18, '012345678', 'Valeria', 'Ramírez', 'Cra. 56, Montería', 'Montería', '3198765432', 'valeria.ramirez@example.com'),
-(19, 19, '123456789', 'Mateo', 'Vargas', 'Calle 34, Sincelejo', 'Sincelejo', '3234567890', 'mateo.vargas@example.com'),
-(20, 20, '234567890', 'Ana Sofía', 'Moreno', 'Cl. 67, Valledupar', 'Valledupar', '3012345678', 'ana.moreno@example.com'),
-(21, 21, '345678901', 'Andrea', 'López', 'Cra. 78, Riohacha', 'Riohacha', '3056789012', 'andrea.lopez@example.com'),
-(22, 22, '456789012', 'Martín', 'González', 'Av. 23, San Andrés', 'San Andrés', '3134567890', 'martin.gonzalez@example.com'),
-(23, 23, '567890123', 'Sofía', 'Martínez', 'Cl. 56, Leticia', 'Leticia', '3045678901', 'sofia.martinez@example.com'),
-(24, 24, '678901234', 'Diego', 'Sánchez', 'Cra. 90, Quibdó', 'Quibdó', '3123456789', 'diego.sanchez@example.com'),
-(25, 25, '789012345', 'Valentina', 'Hernández', 'Calle 12, Yopal', 'Yopal', '3176543210', 'valentina.hernandez@example.com'),
-(26, 26, '890123456', 'Lucas', 'Gómez', 'Av. 45, Florencia', 'Florencia', '3109876543', 'lucas.gomez@example.com'),
-(27, 27, '901234567', 'María José', 'Ramírez', 'Cra. 56, Mocoa', 'Mocoa', '3198765432', 'mariajose.ramirez@example.com'),
-(28, 28, '012345678', 'Julián', 'Martínez', 'Cl. 67, Mitú', 'Mitú', '3234567890', 'julian.martinez@example.com'),
-(29, 29, '123456789', 'Gabriela', 'López', 'Cra. 78, Puerto Carreño', 'Puerto Carreño', '3012345678', 'gabriela.lopez@example.com'),
-(30, 30, '234567890', 'Andrés Felipe', 'González', 'Av. 23, Inírida', 'Inírida', '3056789012', 'andres.gonzalez@example.com'),
-(31, 31, '345678901', 'Camila', 'Hernández', 'Cl. 56, La Guajira', 'La Guajira', '3134567890', 'camila.hernandez@example.com'),
-(32, 32, '456789012', 'Sebastián', 'Ramírez', 'Cra. 90, Arauca', 'Arauca', '3123456789', 'sebastian.ramirez@example.com'),
-(33, 33, '567890123', 'Isabella', 'Gómez', 'Calle 12, Granada', 'Granada', '3045678901', 'isabella.gomez@example.com'),
-(34, 34, '678901234', 'Juan Pablo', 'Martínez', 'Av. 45, Cartago', 'Cartago', '3176543210', 'juanpablo.martinez@example.com'),
-(35, 35, '789012345', 'Valeria', 'Herrera', 'Cra. 56, Rionegro', 'Rionegro', '3109876543', 'valeria.herrera@example.com'),
-(36, 36, '890123456', 'Andrés', 'Londoño', 'Cl. 67, Sogamoso', 'Sogamoso', '3198765432', 'andres.londono@example.com'),
-(37, 37, '901234567', 'Ana Sofía', 'Moreno', 'Cra. 78, Duitama', 'Duitama', '3234567890', 'ana.moreno@example.com'),
-(38, 38, '012345678', 'Javier', 'García', 'Av. 23, Ipiales', 'Ipiales', '3012345678', 'javier.garcia@example.com'),
-(39, 39, '123456789', 'Sara', 'Martínez', 'Cl. 56, Tumaco', 'Tumaco', '3056789012', 'sara.martinez@example.com'),
-(40, 40, '234567890', 'Mateo', 'Gómez', 'Calle 12, Otra Ciudad', 'Otra Ciudad', '3123456789', 'mateo.gomez@example.com'),
-(41, 41, '345678901', 'Lucía', 'Hernández', 'Cra. 78, Otra Ciudad', 'Otra Ciudad', '3134567890', 'lucia.hernandez@example.com'),
-(42, 42, '456789012', 'Martín', 'Ramírez', 'Av. 23, Otra Ciudad', 'Otra Ciudad', '3045678901', 'martin.ramirez@example.com'),
-(43, 43, '567890123', 'Isabella', 'López', 'Cl. 56, Otra Ciudad', 'Otra Ciudad', '3176543210', 'isabella.lopez@example.com'),
-(44, 44, '678901234', 'Juan Pablo', 'González', 'Cra. 90, Otra Ciudad', 'Otra Ciudad', '3109876543', 'juanpablo.gonzalez@example.com'),
-(45, 45, '789012345', 'Valeria', 'Martínez', 'Calle 12, Otra Ciudad', 'Otra Ciudad', '3198765432', 'valeria.martinez@example.com'),
-(46, 46, '890123456', 'Andrés', 'Herrera', 'Av. 45, Otra Ciudad', 'Otra Ciudad', '3234567890', 'andres.herrera@example.com'),
-(47, 47, '901234567', 'Ana Sofía', 'Londoño', 'Cra. 56, Otra Ciudad', 'Otra Ciudad', '3012345678', 'ana.londono@example.com'),
-(48, 48, '012345678', 'Javier', 'Moreno', 'Cl. 67, Otra Ciudad', 'Otra Ciudad', '3056789012', 'javier.moreno@example.com'),
-(49, 49, '123456789', 'Sara', 'García', 'Calle 12, Otra Ciudad', 'Otra Ciudad', '3123456789', 'sara.garcia@example.com'),
-(50, 50, '234567890', 'Mateo', 'Ramírez', 'Av. 23, Otra Ciudad', 'Otra Ciudad', '3045678901', 'mateo.ramirez@example.com'),
-(51, 1, '2345678901', 'Laura', 'Gómez', 'Cra. 34, Bogotá', 'Bogotá', '3109876543', 'laura.gomez@example.com'),
-(52, 2, '3456789012', 'Andrés', 'Martínez', 'Av. 45, Medellín', 'Medellín', '3123456789', 'andres.martinez@example.com'),
-(53, 3, '4567890123', 'Camila', 'Rodríguez', 'Cl. 56, Cali', 'Cali', '3145678901', 'camila.rodriguez@example.com'),
-(54, 4, '5678901234', 'Javier', 'López', 'Calle 67, Barranquilla', 'Barranquilla', '3167890123', 'javier.lopez@example.com'),
-(55, 5, '6789012345', 'Valentina', 'Herrera', 'Cra. 78, Cartagena', 'Cartagena', '3189012345', 'valentina.herrera@example.com'),
-(56, 6, '7890123456', 'Diego', 'García', 'Av. Principal, Bucaramanga', 'Bucaramanga', '3201234567', 'diego.garcia@example.com'),
-(57, 7, '8901234567', 'Sofía', 'Ramírez', 'Cra. 12, Pereira', 'Pereira', '3222345678', 'sofia.ramirez@example.com'),
-(58, 8, '9012345678', 'Mateo', 'Gómez', 'Cl. 23, Manizales', 'Manizales', '3243456789', 'mateo.gomez@example.com'),
-(59, 9, '0123456789', 'Valeria', 'Martínez', 'Cra. 34, Armenia', 'Armenia', '3264567890', 'valeria.martinez@example.com'),
-(60, 10, '1234567890', 'Julián', 'Londoño', 'Av. 45, Santa Marta', 'Santa Marta', '3285678901', 'julian.londono@example.com'),
-(61, 11, '2345678901', 'Ana María', 'González', 'Cl. 56, Villavicencio', 'Villavicencio', '3306789012', 'ana.gonzalez@example.com'),
-(62, 12, '3456789012', 'Felipe', 'Hernández', 'Cra. 78, Ibagué', 'Ibagué', '3327890123', 'felipe.hernandez@example.com'),
-(63, 13, '4567890123', 'Sara', 'López', 'Av. Principal, Cúcuta', 'Cúcuta', '3348901234', 'sara.lopez@example.com'),
-(64, 14, '5678901234', 'Lucas', 'Martínez', 'Calle 67, Popayán', 'Popayán', '3369012345', 'lucas.martinez@example.com'),
-(65, 15, '6789012345', 'Isabella', 'Ramírez', 'Cra. 78, Neiva', 'Neiva', '3380123456', 'isabella.ramirez@example.com'),
-(66, 16, '7890123456', 'Juan Pablo', 'Gómez', 'Av. 45, Pasto', 'Pasto', '3401234567', 'juanpablo.gomez@example.com'),
-(67, 17, '8901234567', 'Valentina', 'Herrera', 'Cra. 56, Tunja', 'Tunja', '3422345678', 'valentina.herrera@example.com'),
-(68, 18, '9012345678', 'Andrés', 'Londoño', 'Cl. 67, Montería', 'Montería', '3443456789', 'andres.londono@example.com'),
-(69, 19, '0123456789', 'Camila', 'García', 'Av. Principal, Sincelejo', 'Sincelejo', '3464567890', 'camila.garcia@example.com'),
-(70, 20, '1234567890', 'Sebastián', 'Martínez', 'Cra. 34, Valledupar', 'Valledupar', '3485678901', 'sebastian.martinez@example.com'),
-(71, 21, '2345678901', 'Laura', 'Ramírez', 'Cra. 12, Riohacha', 'Riohacha', '3506789012', 'laura.ramirez@example.com'),
-(72, 22, '3456789012', 'Andrés', 'Gómez', 'Av. 45, San Andrés', 'San Andrés', '3527890123', 'andres.gomez@example.com'),
-(73, 23, '4567890123', 'Sofía', 'Martínez', 'Cl. 56, Leticia', 'Leticia', '3548901234', 'sofia.martinez@example.com'),
-(74, 24, '5678901234', 'Diego', 'López', 'Calle 67, Quibdó', 'Quibdó', '3569012345', 'diego.lopez@example.com'),
-(75, 25, '6789012345', 'Valentina', 'Herrera', 'Cra. 78, Yopal', 'Yopal', '3580123456', 'valentina.herrera@example.com'),
-(76, 26, '7890123456', 'Lucas', 'Gómez', 'Av. Principal, Florencia', 'Florencia', '3601234567', 'lucas.gomez@example.com'),
-(77, 27, '8901234567', 'María José', 'Ramírez', 'Cra. 56, Mocoa', 'Mocoa', '3622345678', 'mariajose.ramirez@example.com'),
-(78, 28, '9012345678', 'Julián', 'Martínez', 'Cl. 67, Mitú', 'Mitú', '3643456789', 'julian.martinez@example.com'),
-(79, 29, '0123456789', 'Gabriela', 'López', 'Av. 45, Puerto Carreño', 'Puerto Carreño', '3664567890', 'gabriela.lopez@example.com'),
-(80, 30, '1234567890', 'Andrés Felipe', 'González', 'Calle 67, Inírida', 'Inírida', '3685678901', 'andres.gonzalez@example.com'),
-(81, 31, '2345678901', 'Ana Sofía', 'Martínez', 'Cra. 34, La Guajira', 'La Guajira', '3706789012', 'ana.martinez@example.com'),
-(82, 32, '3456789012', 'Martín', 'Ramírez', 'Av. 45, Arauca', 'Arauca', '3727890123', 'martin.ramirez@example.com'),
-(83, 33, '4567890123', 'Isabella', 'Gómez', 'Cl. 56, Granada', 'Granada', '3748901234', 'isabella.gomez@example.com'),
-(84, 34, '5678901234', 'Juan Pablo', 'Martínez', 'Calle 67, Cartago', 'Cartago', '3769012345', 'juanpablo.martinez@example.com'),
-(85, 35, '6789012345', 'Valeria', 'Herrera', 'Cra. 78, Rionegro', 'Rionegro', '3780123456', 'valeria.herrera@example.com'),
-(86, 36, '7890123456', 'Andrés', 'Londoño', 'Av. Principal, Sogamoso', 'Sogamoso', '3801234567', 'andres.londono@example.com'),
-(87, 37, '8901234567', 'Ana Sofía', 'Moreno', 'Cl. 23, Duitama', 'Duitama', '3822345678', 'ana.moreno@example.com'),
-(88, 38, '9012345678', 'Javier', 'García', 'Cra. 34, Ipiales', 'Ipiales', '3843456789', 'javier.garcia@example.com'),
-(89, 39, '0123456789', 'Sara', 'Martínez', 'Av. 45, Tumaco', 'Tumaco', '3864567890', 'sara.martinez@example.com'),
-(90, 40, '1234567890', 'Mateo', 'Gómez', 'Calle 67, Otra Ciudad', 'Otra Ciudad', '3885678901', 'mateo.gomez@example.com'),
-(91, 41, '2345678901', 'Laura', 'Ramírez', 'Cra. 78, Otra Ciudad', 'Otra Ciudad', '3906789012', 'laura.ramirez@example.com'),
-(92, 42, '3456789012', 'Andrés', 'Gómez', 'Av. Principal, Otra Ciudad', 'Otra Ciudad', '3927890123', 'andres.gomez@example.com'),
-(93, 43, '4567890123', 'Sofía', 'Martínez', 'Cl. 56, Otra Ciudad', 'Otra Ciudad', '3948901234', 'sofia.martinez@example.com'),
-(94, 44, '5678901234', 'Diego', 'López', 'Calle 67, Otra Ciudad', 'Otra Ciudad', '3969012345', 'diego.lopez@example.com'),
-(95, 45, '6789012345', 'Valentina', 'Herrera', 'Cra. 78, Otra Ciudad', 'Otra Ciudad', '3980123456', 'valentina.herrera@example.com'),
-(96, 46, '7890123456', 'Lucas', 'Gómez', 'Av. Principal, Otra Ciudad', 'Otra Ciudad', '4001234567', 'lucas.gomez@example.com'),
-(97, 47, '8901234567', 'María José', 'Ramírez', 'Cra. 56, Otra Ciudad', 'Otra Ciudad', '4022345678', 'mariajose.ramirez@example.com'),
-(98, 48, '9012345678', 'Julián', 'Martínez', 'Cl. 67, Otra Ciudad', 'Otra Ciudad', '4043456789', 'julian.martinez@example.com'),
-(99, 49, '0123456789', 'Gabriela', 'López', 'Av. 45, Otra Ciudad', 'Otra Ciudad', '4064567890', 'gabriela.lopez@example.com'),
-(100, 50, '1234567890', 'Andrés Felipe', 'González', 'Calle 67, Otra Ciudad', 'Otra Ciudad', '4085678901', 'andres.gonzalez@example.com');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (1, '929', '1G6DL8EG5A0207677', 'Mazda', 1989, 3, null, 4, 2, 'Edgeblab', 'Fuscia');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (2, 'Ion', 'JTMHY7AJ7B5802658', 'Saturn', 2005, 3, null, 2, 1, 'Tanoodle', 'Red');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (3, 'Corvette', 'WBANB33575C344937', 'Chevrolet', 1972, 3, null, 3, 2, 'Fadeo', 'Orange');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (4, 'Mazda5', '2G4GX5GV5B9827506', 'Mazda', 2007, 3, null, 5, 2, 'Linklinks', 'Khaki');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (5, 'Range Rover Classic', 'WAUHF78PX8A798196', 'Land Rover', 1993, 2, 'Franche-Comté', 3, 2, 'Skippad', 'Aquamarine');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (6, 'XL-7', 'WBAWB73589P916060', 'Suzuki', 2006, 4, null, 1, 2, 'Feedmix', 'Mauv');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (7, 'Millenia', 'WBAYA8C59ED165063', 'Mazda', 1999, 1, 'North Carolina', 4, 1, 'Browsezoom', 'Maroon');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (8, 'F350', '1G6AB5RX4E0848209', 'Ford', 2000, 3, 'Manitoba', 5, 2, 'Voomm', 'Purple');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (9, 'Ram Van 3500', '2B3CJ5DT6BH501132', 'Dodge', 2002, 3, null, 3, 1, 'Brainlounge', 'Yellow');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (10, 'S4', '1GD312CG0EF323317', 'Audi', 2007, 4, 'Midi-Pyrénées', 4, 2, 'Reallinks', 'Fuscia');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (11, 'Laser', 'WAUML54B83N155188', 'Ford', 1989, 1, null, 4, 1, 'Voomm', 'Teal');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (12, 'S6', '3FAHP0CG9BR268108', 'Audi', 2008, 3, 'Nova Scotia', 3, 2, 'Minyx', 'Teal');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (13, 'B-Series Plus', '1ZVBP8AM3B5317939', 'Mazda', 1996, 2, 'Vest-Agder', 1, 1, 'Topiclounge', 'Pink');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (14, 'Range Rover Sport', 'WA1LMAFE1CD935805', 'Land Rover', 2010, 3, null, 5, 1, 'Innojam', 'Green');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (15, 'HHR', '2G4WS52J751656744', 'Chevrolet', 2008, 4, null, 3, 1, 'Zoomzone', 'Blue');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (16, 'Firebird', '1D7RB1CTXAS046167', 'Pontiac', 1991, 2, null, 1, 1, 'Feedfish', 'Fuscia');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (17, 'E250', '3VW4S7AT3EM942543', 'Ford', 2008, 1, null, 4, 1, 'Voonte', 'Aquamarine');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (18, 'Soul', '1G4GA5GC1AF125947', 'Kia', 2010, 3, null, 6, 2, 'Flipopia', 'Crimson');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (19, 'Spectra', 'TRUUT28N921385727', 'Kia', 2001, 3, null, 5, 2, 'Photojam', 'Indigo');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (20, 'Avalanche 2500', 'JTHBE1KS3B0896617', 'Chevrolet', 2006, 2, 'Île-de-France', 4, 2, 'JumpXS', 'Maroon');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (21, 'M3', 'SALVP2BGXFH663814', 'BMW', 2010, 1, null, 5, 2, 'Jamia', 'Violet');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (22, 'J', 'WAUDT48H96K838712', 'Infiniti', 1993, 1, null, 6, 1, 'Vidoo', 'Yellow');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (23, 'Uplander', 'WA1WKAFP7BA605526', 'Chevrolet', 2007, 4, null, 1, 2, 'Jayo', 'Turquoise');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (24, 'Vitara', 'WAUEF78E18A526038', 'Suzuki', 2000, 4, 'Västmanland', 1, 1, 'Yombu', 'Maroon');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (25, '525', '3C63DPBL4CG066723', 'BMW', 2006, 4, null, 5, 1, 'Quatz', 'Fuscia');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (26, 'X6', 'WBAXH5C55CC540780', 'BMW', 2009, 3, null, 5, 1, 'Quamba', 'Aquamarine');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (27, 'Grand Marquis', '5GAKVBED6BJ325395', 'Mercury', 1998, 2, null, 3, 1, 'Oloo', 'Teal');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (28, 'Astro', 'WAUVC58EX5A005313', 'Chevrolet', 1997, 4, null, 4, 2, 'Leenti', 'Teal');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (29, 'Sunfire', 'JTHBK1GG2E2371909', 'Pontiac', 2000, 2, null, 2, 1, 'Photofeed', 'Goldenrod');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (30, 'Cooper Clubman', 'WBANV93558C067073', 'MINI', 2011, 4, 'Île-de-France', 4, 1, 'Linkbridge', 'Pink');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (31, 'Corvette', 'WAUKFAFL6EA735224', 'Chevrolet', 2008, 3, null, 6, 1, 'Bubblebox', 'Violet');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (32, 'Range Rover', 'JTDZN3EU3EJ525884', 'Land Rover', 2005, 1, 'Hamburg', 6, 1, 'Twimbo', 'Goldenrod');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (33, 'Grand Voyager', 'WDDHF0EB1EA078872', 'Plymouth', 1995, 4, null, 1, 2, 'Skibox', 'Turquoise');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (34, 'XK Series', '1G6DC5EG7A0483082', 'Jaguar', 2002, 1, 'Setúbal', 5, 2, 'Camimbo', 'Mauv');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (35, 'Town & Country', 'WAUEL74F45N060908', 'Chrysler', 2012, 4, null, 4, 2, 'Rhynoodle', 'Red');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (36, 'Mazdaspeed 3', '5UXWX9C56DL541266', 'Mazda', 2011, 2, null, 6, 1, 'Bubblebox', 'Violet');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (37, 'Titan', '1G6EL12Y41B685652', 'Nissan', 2005, 4, 'Porto', 3, 2, 'Yotz', 'Red');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (38, '9-5', 'JN8AF5MV4FT919341', 'Saab', 2011, 1, null, 6, 1, 'Thoughtstorm', 'Red');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (39, 'Express 3500', 'WVWAA7AH2AV330306', 'Chevrolet', 2003, 2, null, 3, 2, 'Mybuzz', 'Green');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (40, 'RX Hybrid', 'JTDZN3EU1EJ634649', 'Lexus', 2006, 2, null, 4, 2, 'Edgeclub', 'Yellow');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (41, 'XLR', 'WAUEF98E78A476127', 'Cadillac', 2008, 3, null, 1, 1, 'Quimm', 'Blue');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (42, 'V70', 'JM1GJ1T53E1604605', 'Volvo', 2002, 4, null, 4, 2, 'Gabspot', 'Crimson');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (43, 'Grand Voyager', 'WAUVC58E95A991028', 'Plymouth', 1996, 3, null, 4, 2, 'Skipfire', 'Blue');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (44, 'C70', '2D4RN5D15AR564052', 'Volvo', 2009, 1, null, 1, 2, 'Gabtune', 'Violet');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (45, 'Vigor', '2T3BFREV5DW088562', 'Acura', 1994, 3, null, 2, 1, 'Jaxnation', 'Turquoise');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (46, 'Savana 2500', 'WUAGL78E66A302641', 'GMC', 2001, 4, null, 1, 2, 'Voonix', 'Goldenrod');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (47, 'Pajero', '1FTMF1EW3AK016182', 'Mitsubishi', 1984, 2, 'Viseu', 1, 1, 'Janyx', 'Red');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (48, 'Aveo', '3G5DA03E52S880461', 'Chevrolet', 2004, 2, 'Basse-Normandie', 6, 2, 'Riffpedia', 'Pink');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (49, 'del Sol', 'SCBGT3ZA2FC103319', 'Honda', 1996, 1, null, 3, 1, 'Fivechat', 'Puce');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (50, 'Allante', '19UUA8F2XEA541615', 'Cadillac', 1992, 3, null, 4, 1, 'Thoughtsphere', 'Fuscia');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (51, 'Mountaineer', '5GADV23177D443799', 'Mercury', 1997, 1, null, 3, 2, 'Jabbertype', 'Pink');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (52, 'xD', '4T1BF1FKXEU546077', 'Scion', 2008, 1, null, 4, 2, 'Shufflebeat', 'Violet');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (53, 'F-250 Super Duty', 'WBAEV33424P977903', 'Ford', 2006, 3, null, 5, 1, 'Tazzy', 'Teal');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (54, 'Voyager', '4USCN33402L081401', 'Plymouth', 1993, 1, null, 5, 1, 'Feedfire', 'Maroon');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (55, 'S2000', 'WA1WMBFE4DD999566', 'Honda', 2006, 4, null, 2, 2, 'Linktype', 'Khaki');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (56, 'Corolla', 'JN8AE2KP3B9520272', 'Toyota', 1994, 3, null, 4, 2, 'Blognation', 'Teal');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (57, 'Traverse', '3D7JV1EP9BG252948', 'Chevrolet', 2010, 2, null, 2, 1, 'Realbuzz', 'Teal');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (58, 'Countach', 'NM0AS8F7XE1213053', 'Lamborghini', 1989, 3, null, 4, 1, 'Twitterwire', 'Goldenrod');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (59, 'C70', '1G4HF57989U226405', 'Volvo', 2010, 1, null, 3, 1, 'Skiptube', 'Puce');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (60, '330', 'WAUAFAFL1EA349029', 'BMW', 2006, 4, null, 5, 1, 'Riffwire', 'Indigo');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (61, 'Ranger', 'WBAKG7C58CE228966', 'Ford', 2004, 4, null, 3, 2, 'Tekfly', 'Khaki');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (62, 'Caravan', 'WAULFAFR0AA436184', 'Dodge', 1995, 2, null, 6, 1, 'Zava', 'Maroon');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (63, 'Century', 'WVGAV7AX8CW035800', 'Buick', 1987, 4, null, 6, 1, 'Zoonder', 'Goldenrod');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (64, 'Dakota', '1GD020CG0BF163102', 'Dodge', 2006, 2, null, 2, 2, 'Quimba', 'Yellow');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (65, 'Grand Cherokee', 'WAUAC48H54K545776', 'Jeep', 2012, 4, null, 3, 2, 'Brainverse', 'Orange');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (66, 'Malibu', '1N6AA0CA8FN830918', 'Chevrolet', 2009, 3, null, 2, 2, 'Izio', 'Pink');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (67, 'Grand Marquis', 'TRUWX28N521645201', 'Mercury', 1987, 3, null, 4, 1, 'Trunyx', 'Purple');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (68, 'Liberty', 'WAUDV74F59N713399', 'Jeep', 2007, 2, null, 6, 2, 'Skaboo', 'Puce');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (69, 'Golf', '19XFA1F30AE794960', 'Volkswagen', 2006, 2, null, 3, 2, 'Youtags', 'Maroon');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (70, 'Z3', 'WDDGF4HB2CR669399', 'BMW', 1997, 4, null, 6, 2, 'Rhynoodle', 'Maroon');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (71, 'Club Wagon', '2FMGK5DC0AB533419', 'Ford', 1995, 1, 'Provence-Alpes-Côte d''Azur', 2, 1, 'Eazzy', 'Khaki');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (72, 'Mustang', '5N1AN0NW7FN862531', 'Ford', 2012, 4, null, 4, 2, 'Quire', 'Green');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (73, 'Escalade EXT', 'KNAGG4A88A5668250', 'Cadillac', 2009, 2, 'Mexico', 5, 1, 'Babblestorm', 'Orange');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (74, 'RVR', 'YV126MFC9F1897901', 'Mitsubishi', 1992, 4, null, 2, 1, 'Wordtune', 'Turquoise');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (75, 'Rio', '1J4NF1GB2AD310351', 'Kia', 2006, 2, null, 5, 1, 'Fatz', 'Maroon');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (76, 'RSX', '1G6DH577990467766', 'Acura', 2005, 3, 'Île-de-France', 3, 2, 'Divavu', 'Pink');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (77, 'Fox', '19UUA9F29EA945320', 'Volkswagen', 1989, 2, null, 4, 1, 'Demivee', 'Indigo');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (78, 'Millenia', '1GYFC26279R030315', 'Mazda', 2002, 4, 'Braga', 5, 2, 'Fanoodle', 'Teal');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (79, 'Civic', 'JTDBT4K32C1324015', 'Honda', 2000, 1, null, 5, 1, 'Brainsphere', 'Blue');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (80, 'Fifth Ave', 'WAULD54B03N115471', 'Chrysler', 1993, 2, 'Ontario', 1, 2, 'Yodo', 'Teal');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (81, 'Ranger', 'WAUEFAFL7FA239878', 'Ford', 1999, 3, null, 5, 1, 'Jaxnation', 'Violet');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (82, 'Tribute', '1G6DC5E55C0545743', 'Mazda', 2002, 4, null, 5, 1, 'Yakidoo', 'Violet');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (83, 'Grand Caravan', 'WBA3N9C58EK149890', 'Dodge', 2005, 4, 'Florida', 3, 1, 'Twitterbridge', 'Crimson');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (84, 'Shadow', 'WAUGL68E55A395655', 'Dodge', 1994, 4, null, 3, 1, 'Mymm', 'Teal');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (85, 'Achieva', 'WBAUN13508V346481', 'Oldsmobile', 1993, 2, null, 2, 1, 'Wikido', 'Purple');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (86, 'L300', 'SCFEBBBC6AG623684', 'Mitsubishi', 1988, 4, null, 1, 1, 'Skinder', 'Pink');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (87, 'Forester', '3N1CN7AP6DL484612', 'Subaru', 2006, 1, 'Poitou-Charentes', 6, 1, 'Yodo', 'Teal');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (88, 'Accent', '4T1BF1FK0EU419838', 'Hyundai', 2001, 1, null, 3, 2, 'Browsebug', 'Aquamarine');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (89, 'S80', '1FMCU0D79AK906154', 'Volvo', 1999, 2, null, 5, 2, 'Skyble', 'Pink');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (90, '88', 'WBAYE8C54FD983290', 'Oldsmobile', 1992, 2, 'Calabria', 1, 2, 'Skinder', 'Teal');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (91, 'S10', '5TDBKRFH6FS437575', 'Chevrolet', 1996, 4, 'Nova Scotia', 6, 2, 'Kanoodle', 'Red');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (92, 'Mazda3', 'KNDJT2A10A7940550', 'Mazda', 2012, 1, null, 6, 2, 'Lajo', 'Yellow');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (93, 'Aerostar', 'WAUDFAFL1BN388592', 'Ford', 1991, 2, null, 3, 1, 'Yakijo', 'Khaki');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (94, 'Prizm', '1FTEW1CW5AK881369', 'Geo', 1992, 3, null, 3, 1, 'Mymm', 'Orange');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (95, 'LaCrosse', '1G6AA5RX9E0035841', 'Buick', 2010, 4, null, 1, 2, 'Skyba', 'Mauv');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (96, 'Endeavor', '1G4GA5EC6BF601629', 'Mitsubishi', 2009, 2, null, 2, 1, 'Rhyloo', 'Yellow');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (97, 'Sprinter 2500', '1G4HF5EM0AU847861', 'Mercedes-Benz', 2012, 3, null, 1, 1, 'Yakidoo', 'Crimson');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (98, 'Century', '1C3CDFCB5ED986244', 'Buick', 1985, 1, null, 6, 1, 'Realcube', 'Mauv');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (99, 'Ram 2500', 'JN8AE2KP7D9634620', 'Dodge', 1998, 4, null, 5, 1, 'Shufflester', 'Teal');
+insert into vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color) values (100, 'Park Avenue', 'WBANN73576B354048', 'Buick', 2003, 4, null, 3, 2, 'Omba', 'Red');
 
-INSERT INTO cliente (id_cliente, cedula, nombres, apellidos, direccion, ciudad_residencia, celular, correo_electronico)
-VALUES 
-    (1, '123456789', 'Juan', 'Pérez', 'Calle 123 #45-67', 'Bogotá', '3101234567', 'juanperez@example.com'),
-    (2, '987654321', 'María', 'Gómez', 'Carrera 45 #89-10', 'Bogotá', '3209876543', 'mariagomez@example.com'),
-    (3, '234567890', 'Andrés', 'Martínez', 'Avenida 67 #12-34', 'Bogotá', '3142345678', 'andresmartinez@example.com'),
-    (4, '876543210', 'Laura', 'García', 'Transversal 78 #34-56', 'Bogotá', '3008765432', 'lauragarcia@example.com'),
-    (5, '345678901', 'Carlos', 'Hernández', 'Calle 90 #56-78', 'Bogotá', '3173456789', 'carloshernandez@example.com'),
-    (6, '654321098', 'Ana', 'Ramírez', 'Diagonal 56 #78-90', 'Bogotá', '3186543210', 'anaramirez@example.com'),
-    (7, '543210987', 'Diego', 'López', 'Avenida 34 #56-78', 'Bogotá', '3155432109', 'diegolopez@example.com'),
-    (8, '432109876', 'Patricia', 'Gutiérrez', 'Carrera 12 #34-56', 'Bogotá', '3104321098', 'patriciagutierrez@example.com'),
-    (9, '321098765', 'Santiago', 'Díaz', 'Transversal 90 #12-34', 'Bogotá', '3183210987', 'santiagodiaz@example.com'),
-    (10, '210987654', 'Valentina', 'Castro', 'Avenida 45 #67-89', 'Bogotá', '3202109876', 'valentinacastro@example.com'),
-    (11, '789012345', 'Jorge', 'Fernández', 'Calle 12 #34-56', 'Bogotá', '3177890123', 'jorgefernandez@example.com'),
-    (12, '678901234', 'Mariana', 'Ortega', 'Diagonal 12 #34-56', 'Bogotá', '3106789012', 'marianaortega@example.com'),
-    (13, '567890123', 'Andrea', 'Sánchez', 'Carrera 67 #89-10', 'Bogotá', '3145678901', 'andreasanchez@example.com'),
-    (14, '456789012', 'Luisa', 'Torres', 'Calle 67 #89-10', 'Bogotá', '3204567890', 'luisatorres@example.com'),
-    (15, '345678901', 'Felipe', 'Gómez', 'Avenida 78 #90-12', 'Bogotá', '3003456789', 'felipegomez@example.com'),
-    (16, '234567890', 'Camila', 'Herrera', 'Transversal 78 #90-12', 'Bogotá', '3182345678', 'camilaherrera@example.com'),
-    (17, '123456789', 'Martín', 'Muñoz', 'Calle 56 #78-90', 'Bogotá', '3101234567', 'martinmunoz@example.com'),
-    (18, '012345678', 'Juliana', 'Jiménez', 'Avenida 90 #12-34', 'Bogotá', '3150123456', 'julianajimenez@example.com'),
-    (19, '901234567', 'Gabriel', 'Álvarez', 'Diagonal 34 #56-78', 'Bogotá', '3179012345', 'gabrielalvarez@example.com'),
-    (20, '890123456', 'Valeria', 'Ramírez', 'Carrera 90 #12-34', 'Bogotá', '3208901234', 'valeriaramirez@example.com'),
-    (21, '987654321', 'Luis', 'Gómez', 'Calle 23 #45-67', 'Medellín', '3109876543', 'luisgomez@example.com'),
-    (22, '876543210', 'Ana', 'Martínez', 'Avenida 56 #78-90', 'Medellín', '3208765432', 'anamartinez@example.com'),
-    (23, '765432109', 'Carlos', 'López', 'Diagonal 78 #90-12', 'Medellín', '3176543210', 'carloslopez@example.com'),
-    (24, '654321098', 'Mariana', 'Ramírez', 'Transversal 12 #34-56', 'Medellín', '3146543210', 'marianaramirez@example.com'),
-    (25, '543210987', 'Andrea', 'Gutiérrez', 'Carrera 67 #89-10', 'Medellín', '3185432109', 'andreagutierrez@example.com'),
-    (26, '432109876', 'Jorge', 'Hernández', 'Calle 90 #56-78', 'Medellín', '3154321098', 'jorgehernandez@example.com'),
-    (27, '321098765', 'Laura', 'Díaz', 'Avenida 34 #56-78', 'Medellín', '3103210987', 'lauradiaz@example.com'),
-    (28, '210987654', 'Diego', 'Fernández', 'Diagonal 56 #78-90', 'Medellín', '3202109876', 'diegofernandez@example.com'),
-    (29, '109876543', 'Patricia', 'Castro', 'Carrera 12 #34-56', 'Medellín', '3171098765', 'patriciacastro@example.com'),
-    (30, '098765432', 'Santiago', 'Ortega', 'Transversal 78 #90-12', 'Medellín', '3140987654', 'santiagoortega@example.com'),
-    (31, '123456789', 'Juan', 'Gómez', 'Calle 56 #78-90', 'Cali', '3181234567', 'juangomez@example.com'),
-    (32, '234567890', 'María', 'Ramírez', 'Avenida 78 #90-12', 'Cali', '3152345678', 'mariaramirez@example.com'),
-    (33, '345678901', 'Andrés', 'Martínez', 'Diagonal 12 #34-56', 'Cali', '3103456789', 'andresmartinez@example.com'),
-    (34, '456789012', 'Laura', 'López', 'Transversal 90 #12-34', 'Cali', '3204567890', 'lauralopez@example.com'),
-    (35, '567890123', 'Carlos', 'Gutiérrez', 'Carrera 12 #34-56', 'Cali', '3145678901', 'carlosgutierrez@example.com'),
-    (36, '678901234', 'Mariana', 'Hernández', 'Calle 90 #56-78', 'Cali', '3186789012', 'marianahernandez@example.com'),
-    (37, '789012345', 'Andrea', 'Díaz', 'Avenida 67 #89-10', 'Cali', '3157890123', 'andreadiaz@example.com'),
-    (38, '890123456', 'Luis', 'Fernández', 'Diagonal 56 #78-90', 'Cali', '3108901234', 'luisfernandez@example.com'),
-    (39, '901234567', 'Felipe', 'Castro', 'Transversal 78 #90-12', 'Cali', '3209012345', 'felipecastro@example.com'),
-    (40, '012345678', 'Valentina', 'Ortega', 'Carrera 67 #89-10', 'Cali', '3140123456', 'valentinaortega@example.com'),
-    (41, '234567890', 'Camila', 'Muñoz', 'Calle 23 #45-67', 'Barranquilla', '3102345678', 'camilamunoz@example.com'),
-    (42, '345678901', 'Martín', 'Jiménez', 'Avenida 56 #78-90', 'Barranquilla', '3173456789', 'martinjimenez@example.com'),
-    (43, '456789012', 'Juliana', 'Álvarez', 'Diagonal 78 #90-12', 'Barranquilla', '3144567890', 'julianaalvarez@example.com'),
-    (44, '567890123', 'Gabriel', 'Ramírez', 'Transversal 12 #34-56', 'Barranquilla', '3205678901', 'gabrielramirez@example.com'),
-    (45, '678901234', 'Valeria', 'Herrera', 'Carrera 67 #89-10', 'Barranquilla', '3186789012', 'valeriaherrera@example.com'),
-    (46, '789012345', 'Jorge', 'Gómez', 'Calle 90 #56-78', 'Barranquilla', '3157890123', 'jorgegomez@example.com'),
-    (47, '890123456', 'Mariana', 'López', 'Avenida 34 #56-78', 'Barranquilla', '3108901234', 'marianalopez@example.com'),
-    (48, '901234567', 'Andrea', 'Gutiérrez', 'Diagonal 56 #78-90', 'Barranquilla', '3179012345', 'andreagutierrez@example.com'),
-    (49, '012345678', 'Luis', 'Díaz', 'Transversal 78 #90-12', 'Barranquilla', '3140123456', 'luisdiaz@example.com'),
-    (50, '123456789', 'Diego', 'Fernández', 'Carrera 12 #34-56', 'Barranquilla', '3201234567', 'diegofernandez@example.com'),
-    (51, '234567890', 'Pedro', 'Gómez', 'Calle 34 #56-78', 'Cartagena', '3182345678', 'pedrogomez@example.com'),
-    (52, '345678901', 'Luisa', 'Martínez', 'Avenida 67 #89-10', 'Cartagena', '3153456789', 'luisamartinez@example.com'),
-    (53, '456789012', 'Carlos', 'López', 'Diagonal 12 #34-56', 'Cartagena', '3104567890', 'carloslopez@example.com'),
-    (54, '567890123', 'Mariana', 'Ramírez', 'Transversal 78 #90-12', 'Cartagena', '3205678901', 'marianaramirez@example.com'),
-    (55, '678901234', 'Andrea', 'Gutiérrez', 'Carrera 56 #78-90', 'Cartagena', '3146789012', 'andreagutierrez@example.com'),
-    (56, '789012345', 'Jorge', 'Hernández', 'Calle 90 #56-78', 'Cartagena', '3177890123', 'jorgehernandez@example.com'),
-    (57, '890123456', 'Valentina', 'Díaz', 'Avenida 34 #56-78', 'Cartagena', '3108901234', 'valentinadiaz@example.com'),
-    (58, '901234567', 'Felipe', 'Fernández', 'Diagonal 56 #78-90', 'Cartagena', '3159012345', 'felipefernandez@example.com'),
-    (59, '012345678', 'Santiago', 'Castro', 'Transversal 78 #90-12', 'Cartagena', '3200123456', 'santiagocastro@example.com'),
-    (60, '123456789', 'Laura', 'Ortega', 'Carrera 67 #89-10', 'Cartagena', '3141234567', 'lauraortega@example.com'),
-    (61, '345678901', 'Juan', 'Martínez', 'Calle 56 #78-90', 'Bucaramanga', '3183456789', 'juanmartinez@example.com'),
-    (62, '456789012', 'María', 'Gómez', 'Avenida 78 #90-12', 'Bucaramanga', '3154567890', 'mariagomez@example.com'),
-    (63, '567890123', 'Andrés', 'López', 'Diagonal 12 #34-56', 'Bucaramanga', '3105678901', 'andreslopez@example.com'),
-    (64, '678901234', 'Laura', 'Ramírez', 'Transversal 90 #12-34', 'Bucaramanga', '3206789012', 'lauraramirez@example.com'),
-    (65, '789012345', 'Carlos', 'Gutiérrez', 'Carrera 12 #34-56', 'Bucaramanga', '3147890123', 'carlosgutierrez@example.com'),
-    (66, '890123456', 'Mariana', 'Hernández', 'Calle 90 #56-78', 'Bucaramanga', '3178901234', 'marianahernandez@example.com'),
-    (67, '901234567', 'Diego', 'Díaz', 'Avenida 67 #89-10', 'Bucaramanga', '3109012345', 'diegodiaz@example.com'),
-    (68, '012345678', 'Patricia', 'Fernández', 'Diagonal 56 #78-90', 'Bucaramanga', '3150123456', 'patriciafernandez@example.com'),
-    (69, '123456789', 'Santiago', 'Castro', 'Transversal 78 #90-12', 'Bucaramanga', '3201234567', 'santiagocastro@example.com'),
-    (70, '234567890', 'Valentina', 'Ortega', 'Carrera 67 #89-10', 'Bucaramanga', '3142345678', 'valentinaortega@example.com'),
-    (71, '456789012', 'Pedro', 'Gómez', 'Calle 23 #45-67', 'Pereira', '3184567890', 'pedrogomez@example.com'),
-    (72, '567890123', 'Luisa', 'Martínez', 'Avenida 56 #78-90', 'Pereira', '3155678901', 'luisamartinez@example.com'),
-    (73, '678901234', 'Carlos', 'López', 'Diagonal 78 #90-12', 'Pereira', '3106789012', 'carloslopez@example.com'),
-    (74, '789012345', 'Mariana', 'Ramírez', 'Transversal 12 #34-56', 'Pereira', '3207890123', 'marianaramirez@example.com'),
-    (75, '890123456', 'Andrea', 'Gutiérrez', 'Carrera 56 #78-90', 'Pereira', '3148901234', 'andreagutierrez@example.com'),
-    (76, '901234567', 'Jorge', 'Hernández', 'Calle 90 #56-78', 'Pereira', '3179012345', 'jorgehernandez@example.com'),
-    (77, '012345678', 'Valeria', 'Díaz', 'Avenida 34 #56-78', 'Pereira', '3100123456', 'valeriadiaz@example.com'),
-    (78, '123456789', 'Felipe', 'Fernández', 'Diagonal 56 #78-90', 'Pereira', '3151234567', 'felipefernandez@example.com'),
-    (79, '234567890', 'Santiago', 'Castro', 'Transversal 78 #90-12', 'Pereira', '3202345678', 'santiagocastro@example.com'),
-    (80, '345678901', 'Laura', 'Ortega', 'Carrera 67 #89-10', 'Pereira', '3143456789', 'lauraortega@example.com'),
-    (81, '987654321', 'Pedro', 'Gómez', 'Calle 23 #45-67', 'Ibagué', '3189876543', 'pedrogomez@example.com'),
-    (82, '876543210', 'Luisa', 'Martínez', 'Avenida 56 #78-90', 'Ibagué', '3158765432', 'luisamartinez@example.com'),
-    (83, '765432109', 'Carlos', 'López', 'Diagonal 78 #90-12', 'Ibagué', '3107654321', 'carloslopez@example.com'),
-    (84, '654321098', 'Mariana', 'Ramírez', 'Transversal 12 #34-56', 'Ibagué', '3206543210', 'marianaramirez@example.com'),
-    (85, '543210987', 'Andrea', 'Gutiérrez', 'Carrera 56 #78-90', 'Ibagué', '3145432109', 'andreagutierrez@example.com'),
-    (86, '432109876', 'Jorge', 'Hernández', 'Calle 90 #56-78', 'Cúcuta', '3174321098', 'jorgehernandez@example.com'),
-    (87, '321098765', 'Valentina', 'Díaz', 'Avenida 34 #56-78', 'Cúcuta', '3103210987', 'valentinadiaz@example.com'),
-    (88, '210987654', 'Felipe', 'Fernández', 'Diagonal 56 #78-90', 'Cúcuta', '3202109876', 'felipefernandez@example.com'),
-    (89, '109876543', 'Santiago', 'Castro', 'Transversal 78 #90-12', 'Cúcuta', '3141098765', 'santiagocastro@example.com'),
-    (90, '098765432', 'Laura', 'Ortega', 'Carrera 67 #89-10', 'Cúcuta', '3180987654', 'lauraortega@example.com'),
-	(91, '987654321', 'Pedro', 'Gómez', 'Calle 23 #45-67', 'Popayán', '3159876543', 'pedrogomez@example.com'),
-	(92, '876543210', 'Luisa', 'Martínez', 'Avenida 56 #78-90', 'Popayán', '3108765432', 'luisamartinez@example.com'),
-	(93, '765432109', 'Carlos', 'López', 'Diagonal 78 #90-12', 'Popayán', '3207654321', 'carloslopez@example.com'),
-	(94, '654321098', 'Mariana', 'Ramírez', 'Transversal 12 #34-56', 'Popayán', '3146543210', 'marianaramirez@example.com'),
-	(95, '543210987', 'Andrea', 'Gutiérrez', 'Carrera 56 #78-90', 'Popayán', '3185432109', 'andreagutierrez@example.com'),
-	(96, '432109876', 'Pedro', 'Gómez', 'Calle 23 #45-67', 'Neiva', '3184321098', 'pedrogomez@example.com'),
-	(97, '321098765', 'Luisa', 'Martínez', 'Avenida 56 #78-90', 'Neiva', '3153210987', 'luisamartinez@example.com'),
-	(98, '210987654', 'Carlos', 'López', 'Diagonal 78 #90-12', 'Neiva', '3102109876', 'carloslopez@example.com'),
-	(99, '109876543', 'Mariana', 'Ramírez', 'Transversal 12 #34-56', 'Neiva', '3201098765', 'marianarami@example.com'),
-	(100, '098765432', 'Andrea', 'Gutiérrez', 'Carrera 56 #78-90', 'Neiva', '3140987654', 'andreagutierrez@example.com');
-
-
-INSERT INTO vehiculo1 (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, puertas, estado, capacidad, sunroof, motor, color)
-VALUES
-(1, 'Camioneta', 'ABC123', 'Toyota Hilux 4x4', 2023, 4, 'Disponible', 5, FALSE, 'Diesel 3.0L', 'Blanco'),
-(2, 'Camioneta', 'XYZ456', 'Ford Ranger XLT', 2022, 4, 'Disponible', 5, FALSE, 'Gasolina 2.5L', 'Negro'),
-(3, 'Camioneta', 'DEF789', 'Chevrolet D-Max', 2023, 4, 'Disponible', 5, TRUE, 'Diesel 2.8L', 'Gris'),
-(4, 'Camioneta', 'GHI012', 'Nissan Frontier', 2022, 4, 'Disponible', 5, FALSE, 'Diesel 2.3L', 'Azul'),
-(5, 'Camioneta', 'JKL345', 'Mitsubishi L200', 2023, 4, 'Disponible', 5, FALSE, 'Diesel 2.4L', 'Plata'),
-(6, 'Camioneta', 'MNO678', 'Isuzu D-Max', 2022, 4, 'Disponible', 5, TRUE, 'Diesel 3.0L', 'Rojo'),
-(7, 'Camioneta', 'PQR901', 'Volkswagen Amarok', 2023, 4, 'Disponible', 5, FALSE, 'Diesel 3.0L', 'Blanco'),
-(8, 'Camioneta', 'STU234', 'Fiat Toro', 2022, 4, 'Disponible', 5, TRUE, 'Gasolina 1.8L', 'Negro'),
-(9, 'Camioneta', 'VWX567', 'Honda Ridgeline', 2023, 4, 'Disponible', 5, FALSE, 'Gasolina 3.5L', 'Blanco'),
-(10, 'Camioneta', 'YZA890', 'Chevrolet Colorado', 2022, 4, 'Disponible', 5, TRUE, 'Diesel 2.8L', 'Gris'),
-(11, 'Camioneta', 'BCD123', 'Ford F-150', 2023, 4, 'Disponible', 5, FALSE, 'Gasolina 5.0L', 'Azul'),
-(12, 'Camioneta', 'CDE456', 'Toyota Land Cruiser', 2022, 4, 'Disponible', 5, TRUE, 'Diesel 4.5L', 'Blanco'),
-(13, 'Camioneta', 'EFG789', 'Nissan Patrol', 2023, 4, 'Disponible', 5, FALSE, 'Gasolina 5.6L', 'Gris'),
-(14, 'Camioneta', 'FGH012', 'Mazda BT-50', 2022, 4, 'Disponible', 5, TRUE, 'Diesel 3.2L', 'Rojo'),
-(15, 'Camioneta', 'GHI345', 'Jeep Gladiator', 2023, 4, 'Disponible', 5, FALSE, 'Gasolina 3.6L', 'Negro'),
-(16, 'Camioneta', 'HIJ678', 'Renault Alaskan', 2022, 4, 'Disponible', 5, TRUE, 'Diésel 2.3L', 'Blanco'),
-(17, 'Camioneta', 'IJK901', 'Mercedes-Benz X-Class', 2023, 4, 'Disponible', 5, FALSE, 'Diésel 2.3L', 'Azul'),
-(18, 'Camioneta', 'JKL234', 'Great Wall Wingle', 2022, 4, 'Disponible', 5, TRUE, 'Gasolina 2.4L', 'Gris'),
-(19, 'Camioneta', 'KLM567', 'Volkswagen Saveiro', 2023, 4, 'Disponible', 5, FALSE, 'Gasolina 1.6L', 'Blanco'),
-(20, 'Camioneta', 'LMN890', 'Isuzu S-Cab', 2022, 4, 'Disponible', 5, TRUE, 'Diésel 2.5L', 'Rojo'),
-(21, 'Camioneta', 'MNO123', 'SsangYong Musso', 2023, 4, 'Disponible', 5, FALSE, 'Diésel 2.2L', 'Negro'),
-(22, 'Camioneta', 'NOP456', 'Foton Tunland', 2022, 4, 'Disponible', 5, TRUE, 'Diésel 2.8L', 'Azul'),
-(23, 'Camioneta', 'OPQ789', 'RAM 1500', 2023, 4, 'Disponible', 5, FALSE, 'Gasolina 5.7L', 'Gris'),
-(24, 'Camioneta', 'PQR012', 'JAC T6', 2022, 4, 'Disponible', 5, TRUE, 'Gasolina 2.0L', 'Blanco'),
-(25, 'Camioneta', 'QRS345', 'Dodge Ram 2500', 2023, 4, 'Disponible', 5, FALSE, 'Diésel 6.7L', 'Negro'),
-(26, 'Camioneta', 'RST678', 'GMC Canyon', 2022, 4, 'Disponible', 5, TRUE, 'Gasolina 3.6L', 'Rojo'),
-(27, 'Camioneta', 'STU901', 'Hummer H3', 2023, 4, 'Disponible', 5, FALSE, 'Gasolina 3.7L', 'Azul'),
-(28, 'Camioneta', 'TUV234', 'Land Rover Defender', 2022, 4, 'Disponible', 5, TRUE, 'Diésel 3.0L', 'Gris'),
-(29, 'Camioneta', 'UVW567', 'Mitsubishi Triton', 2023, 4, 'Disponible', 5, FALSE, 'Diésel 2.4L', 'Blanco'),
-(30, 'Camioneta', 'VWX890', 'Chevrolet Silverado', 2022, 4, 'Disponible', 5, TRUE, 'Gasolina 6.2L', 'Rojo'),
-(31, 'Deportivo', 'WXY123', 'Porsche 911 Carrera', 2024, 2, 'Disponible', 2, TRUE, 'Gasolina 3.0L', 'Rojo'),
-(32, 'Deportivo', 'XYZ456', 'BMW M4 Competition', 2023, 2, 'Disponible', 2, TRUE, 'Gasolina 3.0L', 'Azul'),
-(33, 'Deportivo', 'YZA789', 'Audi R8 V10', 2023, 2, 'Disponible', 2, TRUE, 'Gasolina 5.2L', 'Blanco'),
-(34, 'Deportivo', 'ZAB012', 'Chevrolet Corvette Stingray', 2022, 2, 'Disponible', 2, TRUE, 'Gasolina 6.2L', 'Negro'),
-(35, 'Deportivo', 'ABC345', 'Ford Mustang GT', 2022, 2, 'Disponible', 2, TRUE, 'Gasolina 5.0L', 'Gris'),
-(36, 'Deportivo', 'BCD678', 'Nissan GT-R', 2023, 2, 'Disponible', 2, TRUE, 'Gasolina 3.8L', 'Plateado'),
-(37, 'Deportivo', 'CDE901', 'Toyota Supra', 2022, 2, 'Disponible', 2, TRUE, 'Gasolina 3.0L', 'Azul'),
-(38, 'Deportivo', 'DEF234', 'Mercedes-Benz AMG GT', 2023, 2, 'Disponible', 2, TRUE, 'Gasolina 4.0L', 'Blanco'),
-(39, 'Deportivo', 'EFG567', 'Lamborghini Huracan', 2022, 2, 'Disponible', 2, TRUE, 'Gasolina 5.2L', 'Amarillo'),
-(40, 'Deportivo', 'FGH890', 'Ferrari 488 GTB', 2023, 2, 'Disponible', 2, TRUE, 'Gasolina 3.9L', 'Rojo'),
-(41, 'Deportivo', 'GHI123', 'McLaren 720S', 2022, 2, 'Disponible', 2, TRUE, 'Gasolina 4.0L', 'Naranja'),
-(42, 'Deportivo', 'HIJ456', 'BMW i8', 2023, 2, 'Disponible', 2, TRUE, 'Híbrido 1.5L', 'Blanco'),
-(43, 'Deportivo', 'IJK789', 'Aston Martin Vantage', 2022, 2, 'Disponible', 2, TRUE, 'Gasolina 4.0L', 'Verde'),
-(44, 'Deportivo', 'JKL012', 'Maserati GranTurismo', 2023, 2, 'Disponible', 2, TRUE, 'Gasolina 4.7L', 'Negro'),
-(45, 'Deportivo', 'KLM345', 'Lotus Evora', 2022, 2, 'Disponible', 2, TRUE, 'Gasolina 3.5L', 'Azul'),
-(46, 'Deportivo', 'LMN678', 'Bugatti Chiron', 2023, 2, 'Disponible', 2, TRUE, 'Gasolina 8.0L', 'Blanco'),
-(47, 'Deportivo', 'MNO901', 'Koenigsegg Agera RS', 2022, 2, 'Disponible', 2, TRUE, 'Gasolina 5.0L', 'Gris'),
-(48, 'Deportivo', 'NOP234', 'Pagani Huayra', 2023, 2, 'Disponible', 2, TRUE, 'Gasolina 6.0L', 'Rojo'),
-(49, 'Deportivo', 'OPQ567', 'Ferrari LaFerrari', 2022, 2, 'Disponible', 2, TRUE, 'Híbrido 6.3L', 'Negro'),
-(50, 'Deportivo', 'PQR890', 'Tesla Roadster', 2023, 2, 'Disponible', 2, TRUE, 'Eléctrico', 'Blanco'),
-(51, 'Familiar', 'QRS123', 'Honda CR-V', 2022, 4, 'Disponible', 5, TRUE, 'Gasolina 1.5L', 'Plateado'),
-(52, 'Familiar', 'RST456', 'Toyota RAV4', 2023, 4, 'Disponible', 5, TRUE, 'Híbrido 2.5L', 'Blanco'),
-(53, 'Familiar', 'STU789', 'Nissan X-Trail', 2023, 4, 'Disponible', 5, TRUE, 'Gasolina 2.5L', 'Gris'),
-(54, 'Familiar', 'TUV012', 'Kia Sportage', 2022, 4, 'Disponible', 5, TRUE, 'Gasolina 2.0L', 'Negro'),
-(55, 'Familiar', 'UVW345', 'Hyundai Tucson', 2022, 4, 'Disponible', 5, TRUE, 'Gasolina 2.4L', 'Rojo'),
-(56, 'Familiar', 'VWX678', 'Mazda CX-5', 2023, 4, 'Disponible', 5, TRUE, 'Gasolina 2.5L', 'Azul'),
-(57, 'Familiar', 'WXY901', 'Subaru Forester', 2023, 4, 'Disponible', 5, TRUE, 'Gasolina 2.5L', 'Verde'),
-(58, 'Familiar', 'XYZ234', 'Volkswagen Tiguan', 2022, 4, 'Disponible', 5, TRUE, 'Gasolina 2.0L', 'Blanco'),
-(59, 'Familiar', 'YZA567', 'Ford Escape', 2023, 4, 'Disponible', 5, TRUE, 'Híbrido 2.5L', 'Gris'),
-(60, 'Familiar', 'ZAB890', 'Chevrolet Equinox', 2022, 4, 'Disponible', 5, TRUE, 'Gasolina 1.5L', 'Azul'),
-(61, 'Familiar', 'ABC123', 'Renault Kadjar', 2023, 4, 'Disponible', 5, TRUE, 'Diésel 1.5L', 'Blanco'),
-(62, 'Familiar', 'BCD456', 'Volvo XC60', 2022, 4, 'Disponible', 5, TRUE, 'Gasolina 2.0L', 'Negro'),
-(63, 'Familiar', 'CDE789', 'Audi Q5', 2023, 4, 'Disponible', 5, TRUE, 'Gasolina 2.0L', 'Gris'),
-(64, 'Familiar', 'DEF012', 'Mercedes-Benz GLC', 2022, 4, 'Disponible', 5, TRUE, 'Gasolina 2.0L', 'Rojo'),
-(65, 'Familiar', 'EFG345', 'BMW X3', 2023, 4, 'Disponible', 5, TRUE, 'Gasolina 2.0L', 'Azul'),
-(66, 'Familiar', 'FGH678', 'Porsche Macan', 2022, 4, 'Disponible', 5, TRUE, 'Gasolina 2.0L', 'Blanco'),
-(67, 'Familiar', 'GHI901', 'Lexus RX', 2023, 4, 'Disponible', 5, TRUE, 'Híbrido 3.5L', 'Negro'),
-(68, 'Familiar', 'HIJ234', 'Jaguar F-Pace', 2022, 4, 'Disponible', 5, TRUE, 'Gasolina 2.0L', 'Gris'),
-(69, 'Familiar', 'IJK567', 'Land Rover Discovery', 2023, 4, 'Disponible', 5, TRUE, 'Diésel 3.0L', 'Verde'),
-(70, 'Familiar', 'JKL890', 'Tesla Model Y', 2022, 4, 'Disponible', 5, TRUE, 'Eléctrico', 'Blanco'),
-(71, 'Carga', 'KLM123', 'Renault Kangoo', 2022, 4, 'Disponible', 2, FALSE, 'Diésel 1.5L', 'Blanco'),
-(72, 'Carga', 'LMN456', 'Fiat Fiorino', 2023, 4, 'Disponible', 2, FALSE, 'Gasolina 1.4L', 'Rojo'),
-(73, 'Carga', 'MNO789', 'Peugeot Partner', 2022, 4, 'Disponible', 2, FALSE, 'Diésel 1.6L', 'Blanco'),
-(74, 'Carga', 'NOP012', 'Volkswagen Caddy', 2023, 4, 'Disponible', 2, FALSE, 'Diésel 2.0L', 'Azul'),
-(75, 'Carga', 'OPQ345', 'Citroën Berlingo', 2022, 4, 'Disponible', 2, FALSE, 'Diésel 1.6L', 'Gris'),
-(76, 'Carga', 'PQR678', 'Mercedes-Benz Vito', 2023, 4, 'Disponible', 2, FALSE, 'Diésel 2.0L', 'Negro'),
-(77, 'Carga', 'QRS901', 'Ford Transit Connect', 2022, 4, 'Disponible', 2, FALSE, 'Gasolina 2.0L', 'Blanco'),
-(78, 'Carga', 'RST234', 'Chevrolet N300', 2023, 4, 'Disponible', 2, FALSE, 'Gasolina 1.2L', 'Rojo'),
-(79, 'Carga', 'STU567', 'Toyota Proace City', 2022, 4, 'Disponible', 2, FALSE, 'Diésel 1.5L', 'Blanco'),
-(80, 'Carga', 'TUV890', 'Nissan NV200', 2023, 4, 'Disponible', 2, FALSE, 'Gasolina 2.0L', 'Gris'),
-(81, 'Carga', 'UVW123', 'Renault Master', 2022, 4, 'Disponible', 2, FALSE, 'Diésel 2.3L', 'Blanco'),
-(82, 'Carga', 'VWX456', 'Fiat Doblo', 2023, 4, 'Disponible', 2, FALSE, 'Gasolina 1.4L', 'Rojo'),
-(83, 'Carga', 'WXY789', 'Volkswagen Transporter', 2022, 4, 'Disponible', 2, FALSE, 'Diésel 2.0L', 'Azul'),
-(84, 'Carga', 'XYZ012', 'Citroën Jumpy', 2023, 4, 'Disponible', 2, FALSE, 'Diésel 2.0L', 'Gris'),
-(85, 'Carga', 'YZA345', 'Opel Combo', 2022, 4, 'Disponible', 2, FALSE, 'Diésel 1.6L', 'Blanco'),
-(86, 'Carga', 'ZAB678', 'Peugeot Boxer', 2023, 4, 'Disponible', 2, FALSE, 'Diésel 2.2L', 'Negro'),
-(87, 'Carga', 'ABC901', 'Mercedes-Benz Sprinter', 2022, 4, 'Disponible', 2, FALSE, 'Diésel 2.1L', 'Rojo'),
-(88, 'Carga', 'BCD234', 'Ford Transit', 2023, 4, 'Disponible', 2, FALSE, 'Diésel 2.0L', 'Blanco'),
-(89, 'Carga', 'CDE567', 'Iveco Daily', 2022, 4, 'Disponible', 2, FALSE, 'Diésel 3.0L', 'Gris'),
-(90, 'Carga', 'DEF890', 'Renault Trafic', 2023, 4, 'Disponible', 2, FALSE, 'Diésel 2.0L', 'Azul'),
-(91, 'Camioneta', 'EFG567', 'Toyota Land Cruiser', 2023, 4, 'Disponible', 5, TRUE, 'Diesel 4.5L', 'Blanco'),
-(92, 'Deportivo', 'IJK678', 'McLaren 720S', 2023, 2, 'Disponible', 2, TRUE, 'Gasolina 4.0L', 'Naranja'),
-(93, 'Familiar', 'RST901', 'Audi Q5', 2022, 4, 'Disponible', 5, TRUE, 'Gasolina 2.0L', 'Negro'),
-(94, 'Carga', 'UVW234', 'Renault Master', 2023, 4, 'Disponible', 2, FALSE, 'Diésel 2.3L', 'Blanco'),
-(95, 'Camioneta', 'XYZ678', 'Ford F-150', 2022, 4, 'Disponible', 5, FALSE, 'Gasolina 5.0L', 'Azul'),
-(96, 'Deportivo', 'LMN901', 'Porsche Cayman', 2022, 2, 'Disponible', 2, TRUE, 'Gasolina 2.0L', 'Plata'),
-(97, 'Familiar', 'OPQ234', 'Hyundai Santa Fe', 2023, 4, 'Disponible', 5, TRUE, 'Gasolina 2.5L', 'Blanco'),
-(98, 'Carga', 'XYZ012', 'Fiat Doblo', 2022, 4, 'Disponible', 2, FALSE, 'Gasolina 1.4L', 'Rojo'),
-(99, 'Camioneta', 'STU678', 'Chevrolet S10', 2023, 4, 'Disponible', 5, FALSE, 'Diesel 2.8L', 'Gris'),
-(100, 'Deportivo', 'HIJ234', 'BMW i8', 2022, 2, 'Disponible', 2, TRUE, 'Híbrido 1.5L', 'Blanco');
-
-INSERT INTO alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada)
-VALUES 
-(1, '2024-06-01', '2024-06-10', '2024-06-11', 300.00, 50.00, NULL, 450.00, 450.00, 1, 1, 1, 1, 2),
-(2, '2024-06-05', '2024-06-12', '2024-06-14', 250.00, 45.00, 10.00, 330.00, 297.00, 2, 2, 2, 2, 3),
-(3, '2024-06-10', '2024-06-17', '2024-06-19', 350.00, 60.00, 15.00, 455.00, 386.75, 3, 3, 3, 1, 4),
-(4, '2024-06-15', '2024-06-23', '2024-06-25', 280.00, 55.00, NULL, 450.00, 450.00, 4, 4, 4, 3, 5),
-(5, '2024-06-20', '2024-06-27', '2024-06-30', 400.00, 70.00, 20.00, 560.00, 504.00, 5, 5, 5, 2, 1),
-(6, '2024-06-25', '2024-07-03', '2024-07-05', 320.00, 60.00, NULL, 500.00, 500.00, 6, 6, 6, 4, 3),
-(7, '2024-06-02', '2024-06-08', '2024-06-10', 260.00, 50.00, 10.00, 360.00, 324.00, 7, 7, 7, 1, 5),
-(8, '2024-06-07', '2024-06-14', '2024-06-16', 380.00, 70.00, 15.00, 520.00, 442.00, 8, 8, 8, 3, 2),
-(9, '2024-06-12', '2024-06-20', '2024-06-22', 300.00, 55.00, NULL, 470.00, 470.00, 9, 9, 9, 5, 4),
-(10, '2024-06-17', '2024-06-24', '2024-06-27', 420.00, 65.00, 20.00, 630.00, 567.00, 10, 10, 10, 2, 1),
-(11, '2024-06-03', '2024-06-11', '2024-06-14', 340.00, 60.00, NULL, 480.00, 480.00, 11, 11, 11, 4, 3),
-(12, '2024-06-08', '2024-06-15', '2024-06-17', 290.00, 50.00, 10.00, 390.00, 351.00, 12, 12, 12, 1, 5),
-(13, '2024-06-13', '2024-06-21', '2024-06-23', 380.00, 65.00, 15.00, 540.00, 459.00, 13, 13, 13, 3, 2),
-(14, '2024-06-18', '2024-06-26', '2024-06-29', 310.00, 55.00, NULL, 480.00, 480.00, 14, 14, 14, 5, 4),
-(15, '2024-06-23', '2024-06-30', '2024-07-03', 430.00, 70.00, 20.00, 610.00, 549.00, 15, 15, 15, 2, 1),
-(16, '2024-06-04', '2024-06-12', '2024-06-15', 360.00, 65.00, NULL, 520.00, 520.00, 16, 16, 16, 4, 3),
-(17, '2024-06-09', '2024-06-16', '2024-06-18', 300.00, 55.00, 10.00, 410.00, 369.00, 17, 17, 17, 1, 5),
-(18, '2024-06-14', '2024-06-22', '2024-06-25', 390.00, 70.00, 15.00, 570.00, 484.50, 18, 18, 18, 3, 2),
-(19, '2024-06-19', '2024-06-27', '2024-06-30', 320.00, 60.00, NULL, 500.00, 500.00, 19, 19, 19, 5, 4),
-(20, '2024-06-24', '2024-07-01', '2024-07-04', 440.00, 75.00, 20.00, 640.00, 576.00, 20, 20, 20, 2, 1),
-(21, '2024-06-05', '2024-06-13', '2024-06-16', 380.00, 70.00, NULL, 540.00, 540.00, 21, 21, 21, 4, 3),
-(22, '2024-06-10', '2024-06-17', '2024-06-19', 310.00, 60.00, 10.00, 420.00, 378.00, 22, 22, 22, 1, 5),
-(23, '2024-06-15', '2024-06-23', '2024-06-26', 400.00, 65.00, 15.00, 590.00, 501.50, 23, 23, 23, 3, 2),
-(24, '2024-06-20', '2024-06-28', '2024-07-01', 340.00, 55.00, NULL, 520.00, 520.00, 24, 24, 24, 5, 4),
-(25, '2024-06-25', '2024-07-02', '2024-07-05', 460.00, 80.00, 20.00, 680.00, 612.00, 25, 25, 25, 2, 1),
-(26, '2024-06-06', '2024-06-14', '2024-06-17', 400.00, 65.00, NULL, 600.00, 600.00, 26, 26, 26, 4, 3),
-(27, '2024-06-11', '2024-06-18', '2024-06-20', 320.00, 60.00, 10.00, 440.00, 396.00, 27, 27, 27, 1, 5),
-(28, '2024-06-16', '2024-06-24', '2024-06-27', 410.00, 70.00, 15.00, 590.00, 501.50, 28, 28, 28, 3, 2),
-(29, '2024-06-21', '2024-06-29', '2024-07-02', 350.00, 55.00, NULL, 530.00, 530.00, 29, 29, 29, 5, 4),
-(30, '2024-06-26', '2024-07-03', '2024-07-06', 480.00, 85.00, 20.00, 720.00, 648.00, 30, 30, 30, 2, 1),
-(31, '2024-06-01', '2024-06-08', '2024-06-11', 360.00, 60.00, NULL, 480.00, 480.00, 31, 31, 31, 4, 3),
-(32, '2024-06-06', '2024-06-13', '2024-06-15', 300.00, 55.00, 10.00, 410.00, 369.00, 32, 32, 32, 1, 5),
-(33, '2024-06-11', '2024-06-19', '2024-06-22', 410.00, 70.00, 15.00, 600.00, 510.00, 33, 33, 33, 3, 2),
-(34, '2024-06-16', '2024-06-24', '2024-06-27', 350.00, 60.00, NULL, 530.00, 530.00, 34, 34, 34, 5, 4),
-(35, '2024-06-21', '2024-06-28', '2024-07-01', 480.00, 75.00, 20.00, 680.00, 544.00, 35, 35, 35, 2, 1),
-(36, '2024-06-02', '2024-06-09', '2024-06-12', 380.00, 65.00, NULL, 540.00, 540.00, 36, 36, 36, 4, 3),
-(37, '2024-06-07', '2024-06-15', '2024-06-18', 310.00, 55.00, 10.00, 420.00, 378.00, 37, 37, 37, 1, 5),
-(38, '2024-06-12', '2024-06-20', '2024-06-23', 420.00, 70.00, 15.00, 610.00, 518.50, 38, 38, 38, 3, 2),
-(39, '2024-06-17', '2024-06-25', '2024-06-28', 360.00, 60.00, NULL, 540.00, 540.00, 39, 39, 39, 5, 4),
-(40, '2024-06-22', '2024-06-29', '2024-07-02', 490.00, 80.00, 20.00, 700.00, 560.00, 40, 40, 40, 2, 1),
-(41, '2024-06-03', '2024-06-10', '2024-06-13', 400.00, 70.00, NULL, 580.00, 580.00, 41, 41, 41, 4, 3),
-(42, '2024-06-08', '2024-06-16', '2024-06-19', 320.00, 60.00, 10.00, 440.00, 396.00, 42, 42, 42, 1, 5),
-(43, '2024-06-13', '2024-06-21', '2024-06-24', 430.00, 75.00, 15.00, 630.00, 535.50, 43, 43, 43, 3, 2),
-(44, '2024-06-18', '2024-06-26', '2024-06-29', 370.00, 65.00, NULL, 550.00, 550.00, 44, 44, 44, 5, 4),
-(45, '2024-06-23', '2024-07-01', '2024-07-04', 500.00, 85.00, 20.00, 720.00, 576.00, 45, 45, 45, 2, 1),
-(46, '2024-06-04', '2024-06-11', '2024-06-14', 420.00, 70.00, NULL, 600.00, 600.00, 46, 46, 46, 4, 3),
-(47, '2024-06-09', '2024-06-17', '2024-06-20', 340.00, 60.00, 10.00, 460.00, 414.00, 47, 47, 47, 1, 5),
-(48, '2024-06-14', '2024-06-22', '2024-06-25', 450.00, 80.00, 15.00, 660.00, 561.00, 48, 48, 48, 3, 2),
-(49, '2024-06-19', '2024-06-27', '2024-06-30', 380.00, 65.00, NULL, 570.00, 570.00, 49, 49, 49, 5, 4),
-(50, '2024-06-24', '2024-07-02', '2024-07-05', 510.00, 90.00, 20.00, 740.00, 666.00, 50, 50, 50, 2, 1),
-(51, '2024-06-05', '2024-06-12', '2024-06-15', 440.00, 75.00, NULL, 640.00, 640.00, 51, 51, 51, 4, 3),
-(52, '2024-06-10', '2024-06-18', '2024-06-21', 360.00, 65.00, 10.00, 490.00, 441.00, 52, 52, 52, 1, 5),
-(53, '2024-06-15', '2024-06-23', '2024-06-26', 480.00, 85.00, 15.00, 700.00, 595.00, 53, 53, 53, 3, 2),
-(54, '2024-06-20', '2024-06-28', '2024-07-01', 400.00, 70.00, NULL, 600.00, 600.00, 54, 54, 54, 5, 4),
-(55, '2024-06-25', '2024-07-03', '2024-07-06', 530.00, 95.00, 20.00, 780.00, 702.00, 55, 55, 55, 2, 1),
-(56, '2024-06-06', '2024-06-13', '2024-06-16', 460.00, 80.00, NULL, 680.00, 680.00, 56, 56, 56, 4, 3),
-(57, '2024-06-11', '2024-06-19', '2024-06-22', 380.00, 70.00, 10.00, 530.00, 477.00, 57, 57, 57, 1, 5),
-(58, '2024-06-16', '2024-06-24', '2024-06-27', 490.00, 85.00, 15.00, 720.00, 612.00, 58, 58, 58, 3, 2),
-(59, '2024-06-21', '2024-06-29', '2024-07-02', 420.00, 75.00, NULL, 620.00, 620.00, 59, 59, 59, 5, 4),
-(60, '2024-06-26', '2024-07-04', '2024-07-07', 550.00, 100.00, 20.00, 800.00, 720.00, 60, 60, 60, 2, 1),
-(61, '2024-06-07', '2024-06-14', '2024-06-17', 480.00, 85.00, NULL, 700.00, 700.00, 61, 61, 61, 4, 3),
-(62, '2024-06-12', '2024-06-20', '2024-06-23', 400.00, 70.00, 10.00, 560.00, 504.00, 62, 62, 62, 1, 5),
-(63, '2024-06-17', '2024-06-25', '2024-06-28', 510.00, 90.00, 15.00, 750.00, 637.50, 63, 63, 63, 3, 2),
-(64, '2024-06-22', '2024-06-30', '2024-07-03', 440.00, 80.00, NULL, 660.00, 660.00, 64, 64, 64, 5, 4),
-(65, '2024-06-27', '2024-07-05', '2024-07-08', 570.00, 105.00, 20.00, 840.00, 756.00, 65, 65, 65, 2, 1),
-(66, '2024-06-08', '2024-06-15', '2024-06-18', 500.00, 90.00, NULL, 740.00, 740.00, 66, 66, 66, 4, 3),
-(67, '2024-06-13', '2024-06-21', '2024-06-24', 420.00, 75.00, 10.00, 610.00, 549.00, 67, 67, 67, 1, 5),
-(68, '2024-06-18', '2024-06-26', '2024-06-29', 530.00, 95.00, 15.00, 780.00, 663.00, 68, 68, 68, 3, 2),
-(69, '2024-06-23', '2024-07-01', '2024-07-04', 450.00, 80.00, NULL, 670.00, 670.00, 69, 69, 69, 5, 4),
-(70, '2024-06-28', '2024-07-06', '2024-07-09', 590.00, 110.00, 20.00, 860.00, 774.00, 70, 70, 70, 2, 1),
-(71, '2024-06-09', '2024-06-16', '2024-06-19', 520.00, 95.00, NULL, 780.00, 780.00, 71, 71, 71, 4, 3),
-(72, '2024-06-14', '2024-06-22', '2024-06-25', 440.00, 80.00, 10.00, 630.00, 567.00, 72, 72, 72, 1, 5),
-(73, '2024-06-19', '2024-06-27', '2024-06-30', 550.00, 100.00, 15.00, 810.00, 688.50, 73, 73, 73, 3, 2),
-(74, '2024-06-24', '2024-07-02', '2024-07-05', 470.00, 85.00, NULL, 690.00, 690.00, 74, 74, 74, 5, 4),
-(75, '2024-06-29', '2024-07-07', '2024-07-10', 610.00, 115.00, 20.00, 900.00, 810.00, 75, 75, 75, 2, 1),
-(76, '2024-06-10', '2024-06-17', '2024-06-20', 540.00, 100.00, NULL, 800.00, 800.00, 76, 76, 76, 4, 3),
-(77, '2024-06-15', '2024-06-23', '2024-06-26', 460.00, 85.00, 10.00, 660.00, 594.00, 77, 77, 77, 1, 5),
-(78, '2024-06-20', '2024-06-28', '2024-07-01', 570.00, 105.00, 15.00, 840.00, 714.00, 78, 78, 78, 3, 2),
-(79, '2024-06-25', '2024-07-03', '2024-07-06', 490.00, 90.00, NULL, 740.00, 740.00, 79, 79, 79, 5, 4),
-(80, '2024-06-30', '2024-07-08', '2024-07-11', 630.00, 120.00, 20.00, 920.00, 828.00, 80, 80, 80, 2, 1),
-(81, '2024-06-11', '2024-06-18', '2024-06-21', 560.00, 105.00, NULL, 840.00, 840.00, 81, 81, 81, 4, 3),
-(82, '2024-06-16', '2024-06-24', '2024-06-27', 480.00, 90.00, 10.00, 690.00, 621.00, 82, 82, 82, 1, 5),
-(83, '2024-06-21', '2024-06-29', '2024-07-02', 590.00, 110.00, 15.00, 870.00, 739.50, 83, 83, 83, 3, 2),
-(84, '2024-06-26', '2024-07-04', '2024-07-07', 510.00, 95.00, NULL, 770.00, 770.00, 84, 84, 84, 5, 4),
-(85, '2024-07-01', '2024-07-09', '2024-07-12', 650.00, 125.00, 20.00, 960.00, 864.00, 85, 85, 85, 2, 1),
-(86, '2024-06-12', '2024-06-19', '2024-06-22', 580.00, 110.00, NULL, 880.00, 880.00, 86, 86, 86, 4, 3),
-(87, '2024-06-17', '2024-06-25', '2024-06-28', 500.00, 95.00, 10.00, 720.00, 648.00, 87, 87, 87, 1, 5),
-(88, '2024-06-22', '2024-06-30', '2024-07-03', 610.00, 115.00, 15.00, 900.00, 765.00, 88, 88, 88, 3, 2),
-(89, '2024-06-27', '2024-07-05', '2024-07-08', 530.00, 100.00, NULL, 800.00, 800.00, 89, 89, 89, 5, 4),
-(90, '2024-07-02', '2024-07-10', '2024-07-13', 670.00, 130.00, 20.00, 980.00, 882.00, 90, 90, 90, 2, 1),
-(91, '2024-06-13', '2024-06-20', '2024-06-23', 600.00, 115.00, NULL, 920.00, 920.00, 91, 91, 91, 4, 3),
-(92, '2024-06-18', '2024-06-26', '2024-06-29', 520.00, 100.00, 10.00, 750.00, 675.00, 92, 92, 92, 1, 5),
-(93, '2024-06-23', '2024-07-01', '2024-07-04', 630.00, 120.00, 15.00, 930.00, 790.50, 93, 93, 93, 3, 2),
-(94, '2024-06-28', '2024-07-06', '2024-07-09', 550.00, 105.00, NULL, 830.00, 830.00, 94, 94, 94, 5, 4),
-(95, '2024-07-03', '2024-07-11', '2024-07-14', 690.00, 135.00, 20.00, 1020.00, 918.00, 95, 95, 95, 2, 1),
-(96, '2024-06-14', '2024-06-21', '2024-06-24', 620.00, 120.00, NULL, 960.00, 960.00, 96, 96, 96, 4, 3),
-(97, '2024-06-19', '2024-06-27', '2024-06-30', 540.00, 105.00, 10.00, 780.00, 702.00, 97, 97, 97, 1, 5),
-(98, '2024-06-24', '2024-07-02', '2024-07-05', 650.00, 125.00, 15.00, 960.00, 816.00, 98, 98, 98, 3, 2),
-(99, '2024-06-29', '2024-07-07', '2024-07-10', 570.00, 110.00, NULL, 860.00, 860.00, 99, 99, 99, 5, 4),
-(100, '2024-07-04', '2024-07-12', '2024-07-15', 710.00, 140.00, 20.00, 1060.00, 954.00, 100, 100, 100, 2, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (1, '2024-04-27', '2023-09-18', '2024-04-23', 7734, 8564, 9788, 3641, 9332, 1, 1, 1, 3, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (2, '2024-06-16', '2024-06-08', '2024-03-17', 5125, 6628, 2056, 1168, 7883, 2, 2, 2, 3, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (3, '2023-11-01', '2024-01-02', '2023-09-19', 3819, 7294, 9061, 3251, 8115, 3, 3, 3, 3, 4);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (4, '2024-06-19', '2023-09-18', '2024-02-13', 4587, 4402, 5472, 3765, 6579, 4, 4, 4, 3, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (5, '2024-05-11', '2024-03-29', '2024-04-17', 9813, 7353, 4011, 9695, 4262, 5, 5, 5, 1, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (6, '2023-10-23', '2023-11-12', '2023-08-14', 1989, 3625, 3732, 6047, 3843, 6, 6, 6, 2, 4);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (7, '2023-11-29', '2023-11-07', '2024-02-17', 7299, 5198, 7691, 5167, 3799, 7, 7, 7, 1, 4);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (8, '2023-09-08', '2023-08-04', '2023-08-23', 7863, 2871, 2939, 4713, 4090, 8, 8, 8, 5, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (9, '2024-05-05', '2024-03-20', '2024-04-14', 8334, 9191, 5981, 5557, 9928, 9, 9, 9, 1, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (10, '2023-07-23', '2023-11-12', '2023-12-19', 3087, 8595, 7710, 9745, 8789, 10, 10, 10, 3, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (11, '2024-01-04', '2023-10-26', '2024-03-06', 2519, 2364, 4025, 9234, 4183, 11, 11, 11, 5, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (12, '2024-06-23', '2023-09-23', '2024-03-17', 5677, 3037, 2932, 2435, 7704, 12, 12, 12, 2, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (13, '2024-04-12', '2024-01-27', '2023-10-21', 1397, 1323, 6002, 3622, 9938, 13, 13, 13, 2, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (14, '2024-01-19', '2024-05-12', '2024-05-04', 3262, 3684, 9981, 3806, 2641, 14, 14, 14, 2, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (15, '2024-05-04', '2023-07-04', '2024-03-16', 1265, 5974, 5778, 7319, 7776, 15, 15, 15, 2, 4);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (16, '2024-02-18', '2024-04-08', '2023-10-01', 1061, 9334, 5499, 7707, 1578, 16, 16, 16, 4, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (17, '2023-11-24', '2023-10-31', '2023-07-18', 1378, 7842, 2574, 7309, 8828, 17, 17, 17, 3, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (18, '2023-07-21', '2024-05-13', '2024-01-20', 9115, 1514, 2893, 5915, 4267, 18, 18, 18, 1, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (19, '2023-10-22', '2023-12-02', '2023-08-26', 9630, 4101, 7103, 7180, 8231, 19, 19, 19, 3, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (20, '2024-04-29', '2023-07-18', '2024-02-19', 1718, 5125, 2298, 7426, 6159, 20, 20, 20, 4, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (21, '2023-11-15', '2023-08-22', '2024-06-19', 1747, 7413, 4145, 9201, 2021, 21, 21, 21, 3, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (22, '2023-08-05', '2023-09-23', '2024-04-06', 2468, 7417, 3010, 3196, 6210, 22, 22, 22, 2, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (23, '2024-03-07', '2023-11-03', '2024-01-29', 6539, 3281, 9432, 8551, 3456, 23, 23, 23, 5, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (24, '2023-09-22', '2024-02-08', '2024-01-04', 8047, 4095, 7810, 8048, 9106, 24, 24, 24, 4, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (25, '2023-08-27', '2024-02-07', '2024-05-22', 5202, 5227, 4282, 5606, 6819, 25, 25, 25, 5, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (26, '2024-03-22', '2023-12-15', '2024-05-27', 3318, 4210, 6338, 9023, 2192, 26, 26, 26, 5, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (27, '2023-12-05', '2024-04-22', '2023-06-27', 5984, 3204, 7953, 2591, 1194, 27, 27, 27, 5, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (28, '2024-01-08', '2024-05-16', '2023-07-04', 5671, 7077, 7874, 5254, 7329, 28, 28, 28, 3, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (29, '2023-06-28', '2024-02-19', '2024-06-11', 1008, 8905, 4138, 8451, 7287, 29, 29, 29, 1, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (30, '2023-07-28', '2024-04-07', '2024-06-14', 4356, 2172, 5091, 6774, 5288, 30, 30, 30, 2, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (31, '2023-10-30', '2023-10-23', '2024-02-06', 6116, 2269, 3925, 8779, 4905, 31, 31, 31, 3, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (32, '2023-08-16', '2023-12-28', '2024-03-10', 5472, 7142, 6021, 3850, 1035, 32, 32, 32, 2, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (33, '2024-04-19', '2023-07-03', '2024-01-28', 4448, 4325, 8162, 1663, 7844, 33, 33, 33, 3, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (34, '2023-09-03', '2024-05-21', '2024-02-09', 7341, 7409, 1358, 9182, 5896, 34, 34, 34, 3, 4);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (35, '2023-08-19', '2023-08-12', '2024-05-26', 5417, 8161, 8956, 1618, 1070, 35, 35, 35, 4, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (36, '2024-01-16', '2023-08-03', '2024-05-27', 3619, 6571, 3296, 6770, 3090, 36, 36, 36, 5, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (37, '2023-12-09', '2024-03-06', '2024-02-29', 9685, 4275, 9215, 1220, 9543, 37, 37, 37, 5, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (38, '2024-02-27', '2024-02-24', '2023-11-20', 8162, 9799, 6718, 2721, 2734, 38, 38, 38, 3, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (39, '2024-05-20', '2024-05-31', '2024-01-21', 2174, 3537, 3031, 3241, 2493, 39, 39, 39, 3, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (40, '2024-01-03', '2024-06-15', '2024-02-29', 1304, 3906, 7383, 3302, 8178, 40, 40, 40, 5, 4);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (41, '2024-01-28', '2024-02-17', '2023-09-06', 9307, 4863, 9055, 2177, 6620, 41, 41, 41, 3, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (42, '2024-01-02', '2024-05-31', '2023-07-17', 5125, 1836, 3363, 5945, 2360, 42, 42, 42, 3, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (43, '2024-04-15', '2023-12-31', '2023-07-22', 3945, 1805, 6900, 6246, 1194, 43, 43, 43, 2, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (44, '2023-10-25', '2024-01-11', '2023-10-23', 5316, 5174, 2174, 2048, 7800, 44, 44, 44, 1, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (45, '2023-08-08', '2024-04-02', '2023-10-24', 3293, 6247, 9183, 5733, 4025, 45, 45, 45, 5, 4);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (46, '2024-06-25', '2023-10-04', '2023-08-09', 7987, 6466, 1028, 2944, 7769, 46, 46, 46, 5, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (47, '2023-12-20', '2024-05-09', '2024-05-11', 2337, 1887, 8246, 9084, 8897, 47, 47, 47, 3, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (48, '2023-12-08', '2023-12-17', '2023-12-18', 1996, 2594, 7487, 2738, 1038, 48, 48, 48, 2, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (49, '2023-07-08', '2023-08-12', '2024-04-10', 8786, 1955, 5527, 6596, 5455, 49, 49, 49, 3, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (50, '2024-05-30', '2024-05-06', '2023-07-18', 7781, 5753, 5697, 3680, 9360, 50, 50, 50, 1, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (51, '2024-01-06', '2024-02-24', '2024-02-07', 3568, 4278, 7787, 1298, 2392, 51, 51, 51, 1, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (52, '2024-03-12', '2023-12-03', '2024-01-30', 9272, 2409, 5371, 5430, 6734, 52, 52, 52, 4, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (53, '2024-04-21', '2023-12-18', '2024-03-08', 7114, 9981, 4862, 7920, 9315, 53, 53, 53, 5, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (54, '2023-08-21', '2023-08-12', '2024-03-06', 3479, 2860, 3433, 1478, 7984, 54, 54, 54, 1, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (55, '2023-08-11', '2023-11-07', '2024-03-09', 8944, 6656, 5853, 6819, 2132, 55, 55, 55, 3, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (56, '2024-05-24', '2023-10-08', '2023-11-22', 3491, 2776, 7565, 4109, 5745, 56, 56, 56, 5, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (57, '2024-04-16', '2024-01-19', '2024-02-05', 3685, 4589, 5262, 9114, 7380, 57, 57, 57, 2, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (58, '2023-10-24', '2024-06-07', '2024-03-05', 8255, 9941, 2727, 7858, 8260, 58, 58, 58, 4, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (59, '2024-06-04', '2023-08-08', '2023-09-08', 2334, 6696, 8258, 2738, 8382, 59, 59, 59, 4, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (60, '2024-06-20', '2024-03-04', '2023-10-22', 4069, 7169, 1844, 2345, 9820, 60, 60, 60, 3, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (61, '2024-03-18', '2023-12-09', '2023-12-19', 7298, 5780, 2048, 3529, 7199, 61, 61, 61, 4, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (62, '2023-09-03', '2024-04-19', '2023-08-25', 8846, 3741, 2320, 5033, 1675, 62, 62, 62, 5, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (63, '2023-07-29', '2023-08-02', '2023-09-14', 9313, 1527, 8892, 8641, 4766, 63, 63, 63, 3, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (64, '2023-07-03', '2023-11-11', '2023-11-19', 9979, 2148, 6812, 1656, 4357, 64, 64, 64, 2, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (65, '2024-05-19', '2023-09-25', '2023-06-26', 2856, 5701, 4042, 3819, 2563, 65, 65, 65, 4, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (66, '2023-09-01', '2024-06-23', '2023-12-15', 1046, 2760, 4306, 5003, 7166, 66, 66, 66, 1, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (67, '2023-11-11', '2023-11-05', '2024-02-02', 4695, 5447, 2042, 8727, 4499, 67, 67, 67, 4, 4);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (68, '2023-09-30', '2023-08-01', '2024-03-10', 7052, 1972, 3536, 5496, 9822, 68, 68, 68, 1, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (69, '2023-07-11', '2023-09-23', '2024-05-18', 6034, 7750, 3646, 3557, 7012, 69, 69, 69, 3, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (70, '2023-09-18', '2024-06-25', '2023-11-19', 2070, 9835, 5952, 2969, 8446, 70, 70, 70, 2, 4);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (71, '2023-08-04', '2024-03-16', '2024-03-13', 8208, 8999, 2078, 6770, 3465, 71, 71, 71, 5, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (72, '2023-11-29', '2023-11-22', '2024-03-22', 1069, 5310, 9466, 6257, 1296, 72, 72, 72, 4, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (73, '2023-10-18', '2023-07-21', '2024-03-13', 3273, 4781, 9973, 5123, 9558, 73, 73, 73, 4, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (74, '2024-04-16', '2024-02-23', '2023-09-10', 1929, 2101, 8145, 4190, 4618, 74, 74, 74, 3, 4);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (75, '2024-01-05', '2024-02-16', '2024-02-07', 3117, 9819, 9705, 5512, 7785, 75, 75, 75, 3, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (76, '2023-07-31', '2024-01-28', '2024-01-02', 1924, 6241, 5320, 9491, 9469, 76, 76, 76, 1, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (77, '2023-06-28', '2023-12-16', '2024-05-26', 3468, 8447, 5655, 4234, 7724, 77, 77, 77, 2, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (78, '2023-11-24', '2024-03-21', '2024-01-13', 2883, 6726, 4208, 2613, 2192, 78, 78, 78, 5, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (79, '2023-10-27', '2023-12-09', '2023-11-27', 2609, 7722, 3303, 4047, 4270, 79, 79, 79, 1, 4);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (80, '2024-04-27', '2023-10-14', '2024-05-15', 3189, 3572, 5657, 9270, 8317, 80, 80, 80, 4, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (81, '2023-09-20', '2024-05-10', '2023-07-03', 7072, 6452, 4093, 8863, 1855, 81, 81, 81, 1, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (82, '2023-09-06', '2023-12-10', '2024-02-24', 1253, 9773, 9974, 5475, 9301, 82, 82, 82, 2, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (83, '2023-12-18', '2023-10-11', '2023-10-23', 2511, 6008, 4426, 4592, 5599, 83, 83, 83, 2, 4);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (84, '2023-12-15', '2024-03-06', '2024-03-12', 6316, 9834, 2614, 5514, 6376, 84, 84, 84, 3, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (85, '2024-05-20', '2023-10-04', '2024-01-15', 5170, 5038, 3984, 6581, 2147, 85, 85, 85, 3, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (86, '2023-10-20', '2023-10-09', '2024-03-19', 5895, 5223, 5647, 4209, 7546, 86, 86, 86, 1, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (87, '2024-01-21', '2023-10-16', '2024-01-02', 7149, 6866, 2644, 3968, 9366, 87, 87, 87, 1, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (88, '2023-11-03', '2024-03-31', '2023-09-06', 9402, 8419, 7281, 1969, 6861, 88, 88, 88, 1, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (89, '2024-06-08', '2024-05-13', '2024-06-16', 4952, 9814, 8866, 4343, 6826, 89, 89, 89, 4, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (90, '2024-01-23', '2024-02-11', '2023-12-09', 1817, 6044, 7441, 7080, 6506, 90, 90, 90, 4, 5);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (91, '2023-06-27', '2024-03-04', '2023-09-16', 1679, 7942, 2197, 4163, 7475, 91, 91, 91, 5, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (92, '2024-03-27', '2024-04-28', '2023-08-31', 2418, 4513, 3298, 4733, 7721, 92, 92, 92, 2, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (93, '2023-08-12', '2023-08-06', '2024-05-21', 4961, 7476, 1395, 2539, 7113, 93, 93, 93, 1, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (94, '2023-09-27', '2024-02-28', '2023-12-13', 9425, 5742, 3789, 2666, 8388, 94, 94, 94, 2, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (95, '2024-05-29', '2023-11-15', '2023-11-22', 4020, 7852, 1102, 7182, 1331, 95, 95, 95, 3, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (96, '2023-12-31', '2023-09-01', '2023-11-26', 1936, 9510, 5555, 5903, 4500, 96, 96, 96, 4, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (97, '2023-12-27', '2023-12-30', '2023-10-12', 1932, 2116, 2079, 1381, 8448, 97, 97, 97, 2, 3);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (98, '2023-12-07', '2023-12-29', '2024-04-05', 8947, 5227, 4622, 7292, 1951, 98, 98, 98, 4, 2);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (99, '2024-03-31', '2024-02-26', '2024-01-22', 5197, 5042, 5690, 3069, 3943, 99, 99, 99, 2, 1);
+insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (100, '2023-12-19', '2024-02-29', '2024-01-04', 8434, 2612, 1155, 6261, 7601, 100, 100, 100, 4, 1);
