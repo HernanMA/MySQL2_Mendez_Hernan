@@ -900,3 +900,5 @@ CALL calcular_numero_empleados_departamentos_presupuesto_mayor_200000();
 
 select * from departamento;
 select * from empleado;
+
+-- Desarrollado por Hernan Mendez / 1101685607

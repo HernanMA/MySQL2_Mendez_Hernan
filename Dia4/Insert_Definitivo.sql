@@ -410,3 +410,5 @@ insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_l
 insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (98, '2023-12-07', '2023-12-29', '2024-04-05', 8947, 5227, 4622, 7292, 1951, 98, 98, 98, 4, 2);
 insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (99, '2024-03-31', '2024-02-26', '2024-01-22', 5197, 5042, 5690, 3069, 3943, 99, 99, 99, 2, 1);
 insert into alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_llegada, valor_semana, valor_dia, porcentaje_descuento, valor_cotizado, valor_pagado, id_vehiculo, id_cliente, id_empleado, id_sucursal_salida, id_sucursal_llegada) values (100, '2023-12-19', '2024-02-29', '2024-01-04', 8434, 2612, 1155, 6261, 7601, 100, 100, 100, 4, 1);
+
+-- Desarrollado por Hernan Mendez / 1101685607

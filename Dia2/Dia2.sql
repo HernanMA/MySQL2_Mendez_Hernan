@@ -115,3 +115,5 @@ call eliminar_producto('Gorra');
 
 
 select * from productos;
+
+-- Desarrollado por Hernan Mendez / 1101685607

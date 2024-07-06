@@ -82,3 +82,5 @@ begin
 end//
 delimiter ;
 select obtener_precio_producto_prom('Pepito') as Precio;
+
+-- Desarrollado por Hernan Mendez / 1101685607

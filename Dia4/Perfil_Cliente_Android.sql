@@ -39,3 +39,5 @@ INSERT INTO alquiler (id_alquiler, fecha_salida, fecha_llegada, fecha_esperada_l
 VALUES (NULL, '2024-07-01', '2024-07-10', '2024-07-10', 700, 100, 10, 900, 800, 1, 1, 1, 1, 2);
 
 SELECT * FROM alquiler;
+
+-- Desarrollado por Hernan Mendez / 1101685607

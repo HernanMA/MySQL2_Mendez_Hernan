@@ -71,3 +71,5 @@ CREATE TABLE alquiler (
     FOREIGN KEY (id_sucursal_salida) REFERENCES sucursal(id_sucursal),
     FOREIGN KEY (id_sucursal_llegada) REFERENCES sucursal(id_sucursal)
 );
+
+-- Desarrollado por Hernan Mendez / 1101685607

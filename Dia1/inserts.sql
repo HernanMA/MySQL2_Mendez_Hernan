@@ -35,3 +35,5 @@ INSERT INTO vacaciones VALUES (2, 2, 2, '2024-07-10', '2024-07-24', 'Disfrutadas
 INSERT INTO vacaciones VALUES (3, 3, 3, '2024-08-01', '2024-08-15', 'Planificadas');
 INSERT INTO vacaciones VALUES (4, 4, 4, '2024-08-10', '2024-08-24', 'Disfrutadas');
 INSERT INTO vacaciones VALUES (5, 5, 5, '2024-09-01', '2024-09-15', 'Planificadas');
+
+-- Desarrollado por Hernan Mendez / 1101685607

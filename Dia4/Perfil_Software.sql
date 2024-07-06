@@ -62,3 +62,5 @@ WHERE id_alquiler = 1;
 -- c. Eliminar un alquiler
 DELETE FROM alquiler
 WHERE id_alquiler = 1;
+
+-- Desarrollado por Hernan Mendez / 1101685607

@@ -79,5 +79,4 @@ REVOKE ALL ON *.* FROM 'camper'@'%';
 -- Solo poner permisos para que consulte una x base de datos, una y una z columna
 GRANT SELECT (nombre) ON MySQL2_Dia4.persona TO 'camper'@'%';
 
-
-
+-- Desarrollado por Hernan Mendez / 1101685607

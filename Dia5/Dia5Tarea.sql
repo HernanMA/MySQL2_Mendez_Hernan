@@ -162,3 +162,5 @@ SELECT * FROM empleado;
 SELECT * FROM cliente;
 SELECT * FROM vehiculo;
 SELECT * FROM alquiler;
+
+-- Desarrollado por Hernan Mendez / 1101685607

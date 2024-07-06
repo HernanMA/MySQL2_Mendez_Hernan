@@ -148,4 +148,4 @@ select * from sustitucion;
 select * from paciente;
 select * from vacaciones;
 
--- Desarrollado por Hernan Mendez Guerrero / 1101685607
+-- Desarrollado por Hernan Mendez / 1101685607
